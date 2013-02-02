@@ -3,21 +3,62 @@
 Public Class DB_Connect
 
 
+    Shared Function Convert_Month(ByRef Imonth As Integer) As String
 
-    Shared Sub Insert2DB(ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String)
+        Dim Table_name As String
+
+        Table_name = "January"
+
+        If Imonth = 1 Then
+            Table_name = "january"
+        ElseIf Imonth = 2 Then
+            Table_name = "february"
+        ElseIf Imonth = 3 Then
+            Table_name = "march"
+        ElseIf Imonth = 4 Then
+            Table_name = "april"
+        ElseIf Imonth = 5 Then
+            Table_name = "may"
+        ElseIf Imonth = 6 Then
+            Table_name = "june"
+        ElseIf Imonth = 7 Then
+            Table_name = "july"
+        ElseIf Imonth = 8 Then
+            Table_name = "august"
+        ElseIf Imonth = 9 Then
+            Table_name = "september"
+        ElseIf Imonth = 10 Then
+            Table_name = "october"
+        ElseIf Imonth = 11 Then
+            Table_name = "november"
+        ElseIf Imonth = 12 Then
+            Table_name = "december"
+        End If
+
+        Return Table_name
+
+    End Function
+    Shared Sub Insert2DB(ByRef Imonth As Integer, ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String)
 
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
           & "User Id=root;Password="
 
         Dim conn As New MySqlConnection(connString)
         Dim cmd As New MySqlCommand()
+        Dim query As String
+        Dim Table_name As String
+
 
         Try
             conn.Open()
 
-            cmd.Connection = conn
+            Table_name = Convert_Month(Imonth)
 
-            cmd.CommandText = "INSERT INTO viadia(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1')"
+            cmd.Connection = conn
+            query = "INSERT INTO " & Table_name & "(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1')"
+
+
+            cmd.CommandText = query
             cmd.Prepare()
 
 
@@ -34,7 +75,7 @@ Public Class DB_Connect
 
     End Sub
 
-    Public Shared Sub Check_Single_Reservation(ByRef table_num As Integer)
+    Public Shared Sub Check_Single_Reservation(ByRef table_num As Integer, ByRef Imonth As Integer)
 
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
           & "User Id=root;Password="
@@ -43,13 +84,15 @@ Public Class DB_Connect
         Dim cmd As New MySqlCommand()
         Dim objDataset As New DataSet()
         Dim objDataAdapter As New MySqlDataAdapter()
+        Dim Table_name As String
 
+        Table_name = Convert_Month(Imonth)
 
         Try
             conn.Open()
 
-            Dim query As String = "SELECT * FROM viadia WHERE Table_num = " & table_num
-           
+            Dim query As String = "SELECT * FROM " & Table_name & " WHERE Table_num = " & table_num
+
             Try
                 objDataAdapter.SelectCommand = New MySqlCommand(query, conn)
                 objDataAdapter.Fill(objDataset)
@@ -77,7 +120,8 @@ Public Class DB_Connect
 
     End Sub
 
-    Public Shared Sub Update_Table_Color()
+    Public Shared Sub Update_Table_Color(ByRef Imonth As Integer)
+        Dim Table_name As String
         Dim Table_num As String
         Dim j As Integer
         Dim count As Integer
@@ -92,10 +136,17 @@ Public Class DB_Connect
         Dim objDataAdapter As New MySqlDataAdapter()
 
 
+        Table_name = Convert_Month(Imonth)
+
+
+
+
         Try
             conn.Open()
 
-            Dim query As String = "SELECT * FROM viadia WHERE Reserved= 1"
+            Dim query As String = "SELECT * FROM " & Table_name & " WHERE Reserved= 1"
+
+
 
             Try
                 objDataAdapter.SelectCommand = New MySqlCommand(query, conn)
@@ -111,7 +162,7 @@ Public Class DB_Connect
                     tablenums(j) = objDataset.Tables("Table").Rows(j).Item(1)
                 Next j
 
-                
+
                 Dim cControl As Control
                 For Each cControl In MainForm.Controls
 
@@ -156,7 +207,7 @@ Public Class DB_Connect
 
     End Sub
 
-    Public Shared Sub Delete_row(ByRef Table_num As Integer)
+    Public Shared Sub Delete_row(ByRef Table_num As Integer, ByRef Imonth As String)
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
          & "User Id=root;Password="
 
@@ -171,11 +222,13 @@ Public Class DB_Connect
         Dim edate As String
         Dim editor As String
         Dim tablenum As String
+        Dim Table_name As String
 
         Try
+            Table_name = Convert_Month(Imonth)
             conn.Open()
 
-            Dim query As String = "SELECT * FROM viadia WHERE Table_num= " & Table_num
+            Dim query As String = "SELECT * FROM " & Table_name & " WHERE Table_num= " & Table_num
 
             objDataAdapter.SelectCommand = New MySqlCommand(query, conn)
             objDataAdapter.Fill(objDataset)
@@ -190,6 +243,10 @@ Public Class DB_Connect
 
             cmd.Connection = conn
 
+
+
+
+
             Try
                 cmd.CommandText = "INSERT INTO savetable(Table_num, Reserver_Name, Email, phone_num, Begin_date, End_date, Editor_Name, Edit_type) VALUES('" + tablenum + "', '" + rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', 'Deletion')"
                 cmd.Prepare()
@@ -200,7 +257,10 @@ Public Class DB_Connect
             End Try
 
             Try
-                cmd.CommandText = "DELETE FROM viadia WHERE Table_num = " & Table_num
+
+
+
+                cmd.CommandText = "DELETE FROM " & Table_name & " WHERE Table_num = " & Table_num
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
 
@@ -215,7 +275,7 @@ Public Class DB_Connect
         End Try
 
     End Sub
-    Public Shared Sub Edit_row(ByRef table_num As String)
+    Public Shared Sub Edit_row(ByRef table_num As String, ByRef Imonth As Integer)
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
          & "User Id=root;Password="
 
@@ -231,16 +291,22 @@ Public Class DB_Connect
         Dim edate As String
         Dim editor As String
         Dim tablenum As String
+        Dim Edit_Table_name As String
+        Dim Table_name As String
 
         Try
             conn.Open()
 
-            Dim query As String = "SELECT * FROM viadia WHERE Table_num= " & Table_num
+
+
+            Table_name = Convert_Month(Imonth)
+
+            Dim query As String = "SELECT * FROM " & Table_name & " WHERE Table_num= " & table_num
 
             objDataAdapter.SelectCommand = New MySqlCommand(query, conn)
             objDataAdapter.Fill(objDataset)
 
-            tablenum = Table_num.ToString
+            tablenum = table_num.ToString
             rname = objDataset.Tables("Table").Rows(0).Item(2)
             email = objDataset.Tables("Table").Rows(0).Item(3)
             phone_num = objDataset.Tables("Table").Rows(0).Item(4)
@@ -260,7 +326,10 @@ Public Class DB_Connect
             End Try
 
             Try
-                cmd.CommandText = "UPDATE viadia set Table_num = '" + table_num + "', Reserver_name = '" + Reserve.Name_TextBox.Text + "', Email = '" + Reserve.Email_TextBox.Text + "', Phone_num = '" + Reserve.Phone_Num_TextBox.Text + "', Begin_date = '" + Reserve.DateTimePicker1.Text + "', End_date = '" + Reserve.DateTimePicker2.Text + "', Editor_Name = '" + Reserve.Editor_TextBox.Text + "', Reserved = '1'  WHERE Table_num = '" + table_num + "'"
+
+                Edit_Table_name = "UPDATE " & Table_name & " set Table_num = '" + table_num + "', Reserver_name = '" + Reserve.Name_TextBox.Text + "', Email = '" + Reserve.Email_TextBox.Text + "', Phone_num = '" + Reserve.Phone_Num_TextBox.Text + "', Begin_date = '" + Reserve.DateTimePicker1.Text + "', End_date = '" + Reserve.DateTimePicker2.Text + "', Editor_Name = '" + Reserve.Editor_TextBox.Text + "', Reserved = '1'  WHERE Table_num = '" + table_num + "'"
+
+                cmd.CommandText = Edit_Table_name
                 MsgBox(cmd.CommandText)
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
