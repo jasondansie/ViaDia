@@ -43,6 +43,9 @@ Partial Class Reserve
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Phone_Num_TextBox = New System.Windows.Forms.TextBox()
+        Me.Num_Week = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -106,7 +109,7 @@ Partial Class Reserve
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(224, 71)
+        Me.Label5.Location = New System.Drawing.Point(224, 106)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 9
@@ -170,7 +173,7 @@ Partial Class Reserve
         'DateTimePicker2
         '
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(321, 65)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(321, 106)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(103, 20)
         Me.DateTimePicker2.TabIndex = 18
@@ -179,7 +182,7 @@ Partial Class Reserve
         'Editor_label
         '
         Me.Editor_label.AutoSize = True
-        Me.Editor_label.Location = New System.Drawing.Point(224, 100)
+        Me.Editor_label.Location = New System.Drawing.Point(224, 135)
         Me.Editor_label.Name = "Editor_label"
         Me.Editor_label.Size = New System.Drawing.Size(64, 13)
         Me.Editor_label.TabIndex = 19
@@ -187,7 +190,7 @@ Partial Class Reserve
         '
         'Editor_TextBox
         '
-        Me.Editor_TextBox.Location = New System.Drawing.Point(321, 100)
+        Me.Editor_TextBox.Location = New System.Drawing.Point(321, 141)
         Me.Editor_TextBox.Name = "Editor_TextBox"
         Me.Editor_TextBox.Size = New System.Drawing.Size(103, 20)
         Me.Editor_TextBox.TabIndex = 20
@@ -209,11 +212,41 @@ Partial Class Reserve
         Me.Phone_Num_TextBox.Size = New System.Drawing.Size(100, 20)
         Me.Phone_Num_TextBox.TabIndex = 21
         '
+        'Num_Week
+        '
+        Me.Num_Week.AutoSize = True
+        Me.Num_Week.Location = New System.Drawing.Point(442, 79)
+        Me.Num_Week.Name = "Num_Week"
+        Me.Num_Week.Size = New System.Drawing.Size(36, 13)
+        Me.Num_Week.TabIndex = 23
+        Me.Num_Week.Text = "Week"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(224, 79)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(79, 13)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "Reserved Time"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        Me.ComboBox1.Location = New System.Drawing.Point(321, 71)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(103, 21)
+        Me.ComboBox1.TabIndex = 25
+        '
         'Reserve
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 327)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Num_Week)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Phone_Num_TextBox)
         Me.Controls.Add(Me.Editor_TextBox)
@@ -260,4 +293,7 @@ Partial Class Reserve
     Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Phone_Num_TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Num_Week As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

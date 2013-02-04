@@ -95,4 +95,45 @@
         End If
 
     End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If ComboBox1.Text = "0" Then
+            DateTimePicker2.Value = DateTimePicker1.Value
+
+        ElseIf ComboBox1.Text = "1" Then
+            Num_week.Text = "1"
+
+            DateTimePicker2.Value = DateTimePicker2.Value.AddDays(7)
+
+        ElseIf ComboBox1.Text = "2" Then
+            Num_week.Text = "2"
+            DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+13)
+
+        ElseIf ComboBox1.Text = "3" Then
+
+            Num_week.Text = "3"
+            DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+20)
+
+        ElseIf ComboBox1.Text = "4" Then
+            Num_week.Text = "4"
+            DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+27)
+
+        End If
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Num_Week.Click
+
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
+        DateTimePicker2.Value = DateTimePicker1.Value
+
+    End Sub
+    Private Sub ComboBox1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ComboBox1.MouseClick
+        If ComboBox1.Capture = True Then
+            DateTimePicker2.Value = DateTimePicker1.Value
+        End If
+
+    End Sub
+
 End Class

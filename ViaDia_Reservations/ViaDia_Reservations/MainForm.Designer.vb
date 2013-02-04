@@ -106,6 +106,16 @@ Partial Class MainForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Update_tables_Button = New System.Windows.Forms.Button()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.Button78 = New System.Windows.Forms.Button()
+        Me.Button79 = New System.Windows.Forms.Button()
+        Me.Button80 = New System.Windows.Forms.Button()
+        Me.Button81 = New System.Windows.Forms.Button()
+        Me.Button84 = New System.Windows.Forms.Button()
+        Me.Button85 = New System.Windows.Forms.Button()
+        Me.Button86 = New System.Windows.Forms.Button()
+        Me.Button87 = New System.Windows.Forms.Button()
+        Me.Button88 = New System.Windows.Forms.Button()
+        Me.Button89 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label2
@@ -155,7 +165,7 @@ Partial Class MainForm
         'Done_Button
         '
         Me.Done_Button.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Done_Button.Location = New System.Drawing.Point(531, 520)
+        Me.Done_Button.Location = New System.Drawing.Point(531, 532)
         Me.Done_Button.Name = "Done_Button"
         Me.Done_Button.Size = New System.Drawing.Size(65, 22)
         Me.Done_Button.TabIndex = 164
@@ -419,7 +429,7 @@ Partial Class MainForm
         '
         Me.Button54.BackColor = System.Drawing.Color.Lime
         Me.Button54.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button54.Location = New System.Drawing.Point(415, 194)
+        Me.Button54.Location = New System.Drawing.Point(415, 183)
         Me.Button54.Name = "Button54"
         Me.Button54.Size = New System.Drawing.Size(30, 23)
         Me.Button54.TabIndex = 139
@@ -430,7 +440,7 @@ Partial Class MainForm
         '
         Me.Button53.BackColor = System.Drawing.Color.Lime
         Me.Button53.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button53.Location = New System.Drawing.Point(381, 194)
+        Me.Button53.Location = New System.Drawing.Point(381, 183)
         Me.Button53.Name = "Button53"
         Me.Button53.Size = New System.Drawing.Size(30, 23)
         Me.Button53.TabIndex = 138
@@ -441,7 +451,7 @@ Partial Class MainForm
         '
         Me.Button52.BackColor = System.Drawing.Color.Lime
         Me.Button52.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button52.Location = New System.Drawing.Point(349, 194)
+        Me.Button52.Location = New System.Drawing.Point(349, 183)
         Me.Button52.Name = "Button52"
         Me.Button52.Size = New System.Drawing.Size(30, 23)
         Me.Button52.TabIndex = 137
@@ -452,7 +462,7 @@ Partial Class MainForm
         '
         Me.Button51.BackColor = System.Drawing.Color.Lime
         Me.Button51.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button51.Location = New System.Drawing.Point(319, 194)
+        Me.Button51.Location = New System.Drawing.Point(319, 183)
         Me.Button51.Name = "Button51"
         Me.Button51.Size = New System.Drawing.Size(30, 23)
         Me.Button51.TabIndex = 136
@@ -463,7 +473,7 @@ Partial Class MainForm
         '
         Me.Button50.BackColor = System.Drawing.Color.Lime
         Me.Button50.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button50.Location = New System.Drawing.Point(244, 195)
+        Me.Button50.Location = New System.Drawing.Point(244, 184)
         Me.Button50.Name = "Button50"
         Me.Button50.Size = New System.Drawing.Size(30, 23)
         Me.Button50.TabIndex = 135
@@ -474,7 +484,7 @@ Partial Class MainForm
         '
         Me.Button49.BackColor = System.Drawing.Color.Lime
         Me.Button49.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button49.Location = New System.Drawing.Point(211, 194)
+        Me.Button49.Location = New System.Drawing.Point(211, 183)
         Me.Button49.Name = "Button49"
         Me.Button49.Size = New System.Drawing.Size(30, 23)
         Me.Button49.TabIndex = 134
@@ -485,7 +495,7 @@ Partial Class MainForm
         '
         Me.Button47.BackColor = System.Drawing.Color.Lime
         Me.Button47.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button47.Location = New System.Drawing.Point(141, 194)
+        Me.Button47.Location = New System.Drawing.Point(141, 183)
         Me.Button47.Name = "Button47"
         Me.Button47.Size = New System.Drawing.Size(30, 23)
         Me.Button47.TabIndex = 132
@@ -496,7 +506,7 @@ Partial Class MainForm
         '
         Me.Button46.BackColor = System.Drawing.Color.Lime
         Me.Button46.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button46.Location = New System.Drawing.Point(108, 194)
+        Me.Button46.Location = New System.Drawing.Point(108, 183)
         Me.Button46.Name = "Button46"
         Me.Button46.Size = New System.Drawing.Size(30, 23)
         Me.Button46.TabIndex = 131
@@ -507,7 +517,7 @@ Partial Class MainForm
         '
         Me.Button48.BackColor = System.Drawing.Color.Lime
         Me.Button48.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button48.Location = New System.Drawing.Point(177, 194)
+        Me.Button48.Location = New System.Drawing.Point(177, 183)
         Me.Button48.Name = "Button48"
         Me.Button48.Size = New System.Drawing.Size(30, 23)
         Me.Button48.TabIndex = 133
@@ -518,7 +528,7 @@ Partial Class MainForm
         '
         Me.Button45.BackColor = System.Drawing.Color.Lime
         Me.Button45.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button45.Location = New System.Drawing.Point(74, 194)
+        Me.Button45.Location = New System.Drawing.Point(74, 183)
         Me.Button45.Name = "Button45"
         Me.Button45.Size = New System.Drawing.Size(30, 23)
         Me.Button45.TabIndex = 130
@@ -529,7 +539,7 @@ Partial Class MainForm
         '
         Me.Button44.BackColor = System.Drawing.Color.Lime
         Me.Button44.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button44.Location = New System.Drawing.Point(41, 193)
+        Me.Button44.Location = New System.Drawing.Point(41, 182)
         Me.Button44.Name = "Button44"
         Me.Button44.Size = New System.Drawing.Size(30, 23)
         Me.Button44.TabIndex = 129
@@ -540,7 +550,7 @@ Partial Class MainForm
         '
         Me.Button43.BackColor = System.Drawing.Color.Lime
         Me.Button43.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button43.Location = New System.Drawing.Point(40, 217)
+        Me.Button43.Location = New System.Drawing.Point(40, 206)
         Me.Button43.Name = "Button43"
         Me.Button43.Size = New System.Drawing.Size(30, 23)
         Me.Button43.TabIndex = 128
@@ -551,7 +561,7 @@ Partial Class MainForm
         '
         Me.Button42.BackColor = System.Drawing.Color.Lime
         Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button42.Location = New System.Drawing.Point(74, 217)
+        Me.Button42.Location = New System.Drawing.Point(74, 206)
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(30, 23)
         Me.Button42.TabIndex = 127
@@ -562,7 +572,7 @@ Partial Class MainForm
         '
         Me.Button41.BackColor = System.Drawing.Color.Lime
         Me.Button41.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button41.Location = New System.Drawing.Point(107, 217)
+        Me.Button41.Location = New System.Drawing.Point(107, 206)
         Me.Button41.Name = "Button41"
         Me.Button41.Size = New System.Drawing.Size(30, 23)
         Me.Button41.TabIndex = 126
@@ -573,7 +583,7 @@ Partial Class MainForm
         '
         Me.Button40.BackColor = System.Drawing.Color.Lime
         Me.Button40.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button40.Location = New System.Drawing.Point(141, 217)
+        Me.Button40.Location = New System.Drawing.Point(141, 206)
         Me.Button40.Name = "Button40"
         Me.Button40.Size = New System.Drawing.Size(30, 23)
         Me.Button40.TabIndex = 125
@@ -584,7 +594,7 @@ Partial Class MainForm
         '
         Me.Button39.BackColor = System.Drawing.Color.Lime
         Me.Button39.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button39.Location = New System.Drawing.Point(175, 217)
+        Me.Button39.Location = New System.Drawing.Point(175, 206)
         Me.Button39.Name = "Button39"
         Me.Button39.Size = New System.Drawing.Size(30, 23)
         Me.Button39.TabIndex = 124
@@ -595,7 +605,7 @@ Partial Class MainForm
         '
         Me.Button38.BackColor = System.Drawing.Color.Lime
         Me.Button38.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button38.Location = New System.Drawing.Point(208, 217)
+        Me.Button38.Location = New System.Drawing.Point(208, 206)
         Me.Button38.Name = "Button38"
         Me.Button38.Size = New System.Drawing.Size(30, 23)
         Me.Button38.TabIndex = 123
@@ -606,7 +616,7 @@ Partial Class MainForm
         '
         Me.Button37.BackColor = System.Drawing.Color.Lime
         Me.Button37.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button37.Location = New System.Drawing.Point(244, 217)
+        Me.Button37.Location = New System.Drawing.Point(244, 206)
         Me.Button37.Name = "Button37"
         Me.Button37.Size = New System.Drawing.Size(30, 23)
         Me.Button37.TabIndex = 122
@@ -617,7 +627,7 @@ Partial Class MainForm
         '
         Me.Button36.BackColor = System.Drawing.Color.Lime
         Me.Button36.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button36.Location = New System.Drawing.Point(319, 217)
+        Me.Button36.Location = New System.Drawing.Point(319, 206)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(30, 23)
         Me.Button36.TabIndex = 121
@@ -628,7 +638,7 @@ Partial Class MainForm
         '
         Me.Button35.BackColor = System.Drawing.Color.Lime
         Me.Button35.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button35.Location = New System.Drawing.Point(350, 218)
+        Me.Button35.Location = New System.Drawing.Point(350, 207)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(30, 23)
         Me.Button35.TabIndex = 120
@@ -639,7 +649,7 @@ Partial Class MainForm
         '
         Me.Button34.BackColor = System.Drawing.Color.Lime
         Me.Button34.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button34.Location = New System.Drawing.Point(382, 217)
+        Me.Button34.Location = New System.Drawing.Point(382, 206)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(30, 23)
         Me.Button34.TabIndex = 119
@@ -650,7 +660,7 @@ Partial Class MainForm
         '
         Me.Button33.BackColor = System.Drawing.Color.Lime
         Me.Button33.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button33.Location = New System.Drawing.Point(416, 217)
+        Me.Button33.Location = New System.Drawing.Point(416, 206)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(30, 23)
         Me.Button33.TabIndex = 118
@@ -661,7 +671,7 @@ Partial Class MainForm
         '
         Me.Button32.BackColor = System.Drawing.Color.Lime
         Me.Button32.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button32.Location = New System.Drawing.Point(383, 357)
+        Me.Button32.Location = New System.Drawing.Point(383, 346)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(30, 23)
         Me.Button32.TabIndex = 117
@@ -672,7 +682,7 @@ Partial Class MainForm
         '
         Me.Button31.BackColor = System.Drawing.Color.Lime
         Me.Button31.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button31.Location = New System.Drawing.Point(383, 332)
+        Me.Button31.Location = New System.Drawing.Point(383, 321)
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(30, 23)
         Me.Button31.TabIndex = 116
@@ -683,7 +693,7 @@ Partial Class MainForm
         '
         Me.Button30.BackColor = System.Drawing.Color.Lime
         Me.Button30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button30.Location = New System.Drawing.Point(383, 308)
+        Me.Button30.Location = New System.Drawing.Point(383, 297)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(30, 23)
         Me.Button30.TabIndex = 115
@@ -694,7 +704,7 @@ Partial Class MainForm
         '
         Me.Button29.BackColor = System.Drawing.Color.Lime
         Me.Button29.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button29.Location = New System.Drawing.Point(383, 284)
+        Me.Button29.Location = New System.Drawing.Point(383, 273)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(30, 23)
         Me.Button29.TabIndex = 114
@@ -705,7 +715,7 @@ Partial Class MainForm
         '
         Me.Button28.BackColor = System.Drawing.Color.Lime
         Me.Button28.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button28.Location = New System.Drawing.Point(419, 284)
+        Me.Button28.Location = New System.Drawing.Point(419, 273)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(30, 23)
         Me.Button28.TabIndex = 113
@@ -716,7 +726,7 @@ Partial Class MainForm
         '
         Me.Button27.BackColor = System.Drawing.Color.Lime
         Me.Button27.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button27.Location = New System.Drawing.Point(419, 308)
+        Me.Button27.Location = New System.Drawing.Point(419, 297)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(30, 23)
         Me.Button27.TabIndex = 112
@@ -727,7 +737,7 @@ Partial Class MainForm
         '
         Me.Button26.BackColor = System.Drawing.Color.Lime
         Me.Button26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button26.Location = New System.Drawing.Point(419, 332)
+        Me.Button26.Location = New System.Drawing.Point(419, 321)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(30, 23)
         Me.Button26.TabIndex = 111
@@ -738,7 +748,7 @@ Partial Class MainForm
         '
         Me.Button25.BackColor = System.Drawing.Color.Lime
         Me.Button25.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button25.Location = New System.Drawing.Point(419, 357)
+        Me.Button25.Location = New System.Drawing.Point(419, 346)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(30, 23)
         Me.Button25.TabIndex = 110
@@ -749,7 +759,7 @@ Partial Class MainForm
         '
         Me.Button24.BackColor = System.Drawing.Color.Lime
         Me.Button24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button24.Location = New System.Drawing.Point(517, 478)
+        Me.Button24.Location = New System.Drawing.Point(517, 467)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(30, 23)
         Me.Button24.TabIndex = 109
@@ -760,7 +770,7 @@ Partial Class MainForm
         '
         Me.Button23.BackColor = System.Drawing.Color.Lime
         Me.Button23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button23.Location = New System.Drawing.Point(517, 454)
+        Me.Button23.Location = New System.Drawing.Point(517, 443)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(30, 23)
         Me.Button23.TabIndex = 108
@@ -771,7 +781,7 @@ Partial Class MainForm
         '
         Me.Button22.BackColor = System.Drawing.Color.Lime
         Me.Button22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button22.Location = New System.Drawing.Point(517, 431)
+        Me.Button22.Location = New System.Drawing.Point(517, 420)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(30, 23)
         Me.Button22.TabIndex = 107
@@ -782,7 +792,7 @@ Partial Class MainForm
         '
         Me.Button21.BackColor = System.Drawing.Color.Lime
         Me.Button21.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button21.Location = New System.Drawing.Point(517, 408)
+        Me.Button21.Location = New System.Drawing.Point(517, 397)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(30, 23)
         Me.Button21.TabIndex = 106
@@ -793,7 +803,7 @@ Partial Class MainForm
         '
         Me.Button20.BackColor = System.Drawing.Color.Lime
         Me.Button20.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button20.Location = New System.Drawing.Point(517, 361)
+        Me.Button20.Location = New System.Drawing.Point(517, 350)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(30, 23)
         Me.Button20.TabIndex = 105
@@ -804,7 +814,7 @@ Partial Class MainForm
         '
         Me.Button19.BackColor = System.Drawing.Color.Lime
         Me.Button19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button19.Location = New System.Drawing.Point(517, 336)
+        Me.Button19.Location = New System.Drawing.Point(517, 325)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(30, 23)
         Me.Button19.TabIndex = 104
@@ -815,7 +825,7 @@ Partial Class MainForm
         '
         Me.Button18.BackColor = System.Drawing.Color.Lime
         Me.Button18.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button18.Location = New System.Drawing.Point(517, 314)
+        Me.Button18.Location = New System.Drawing.Point(517, 303)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(30, 23)
         Me.Button18.TabIndex = 103
@@ -826,7 +836,7 @@ Partial Class MainForm
         '
         Me.Button17.BackColor = System.Drawing.Color.Lime
         Me.Button17.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button17.Location = New System.Drawing.Point(517, 288)
+        Me.Button17.Location = New System.Drawing.Point(517, 277)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(30, 23)
         Me.Button17.TabIndex = 102
@@ -837,7 +847,7 @@ Partial Class MainForm
         '
         Me.Button16.BackColor = System.Drawing.Color.Lime
         Me.Button16.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button16.Location = New System.Drawing.Point(517, 264)
+        Me.Button16.Location = New System.Drawing.Point(517, 253)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(30, 23)
         Me.Button16.TabIndex = 101
@@ -848,7 +858,7 @@ Partial Class MainForm
         '
         Me.Button15.BackColor = System.Drawing.Color.Lime
         Me.Button15.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button15.Location = New System.Drawing.Point(517, 240)
+        Me.Button15.Location = New System.Drawing.Point(517, 229)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(30, 23)
         Me.Button15.TabIndex = 100
@@ -859,7 +869,7 @@ Partial Class MainForm
         '
         Me.Button14.BackColor = System.Drawing.Color.Lime
         Me.Button14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button14.Location = New System.Drawing.Point(517, 216)
+        Me.Button14.Location = New System.Drawing.Point(517, 205)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(30, 23)
         Me.Button14.TabIndex = 99
@@ -870,7 +880,7 @@ Partial Class MainForm
         '
         Me.Button13.BackColor = System.Drawing.Color.Lime
         Me.Button13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button13.Location = New System.Drawing.Point(517, 194)
+        Me.Button13.Location = New System.Drawing.Point(517, 183)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(30, 23)
         Me.Button13.TabIndex = 98
@@ -881,7 +891,7 @@ Partial Class MainForm
         '
         Me.Button12.BackColor = System.Drawing.Color.Lime
         Me.Button12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button12.Location = New System.Drawing.Point(549, 194)
+        Me.Button12.Location = New System.Drawing.Point(549, 183)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(30, 23)
         Me.Button12.TabIndex = 97
@@ -892,7 +902,7 @@ Partial Class MainForm
         '
         Me.Button11.BackColor = System.Drawing.Color.Lime
         Me.Button11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button11.Location = New System.Drawing.Point(550, 216)
+        Me.Button11.Location = New System.Drawing.Point(550, 205)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(30, 23)
         Me.Button11.TabIndex = 96
@@ -903,7 +913,7 @@ Partial Class MainForm
         '
         Me.Button10.BackColor = System.Drawing.Color.Lime
         Me.Button10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button10.Location = New System.Drawing.Point(549, 240)
+        Me.Button10.Location = New System.Drawing.Point(549, 229)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(30, 23)
         Me.Button10.TabIndex = 95
@@ -914,7 +924,7 @@ Partial Class MainForm
         '
         Me.Button9.BackColor = System.Drawing.Color.Lime
         Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button9.Location = New System.Drawing.Point(549, 264)
+        Me.Button9.Location = New System.Drawing.Point(549, 253)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(30, 23)
         Me.Button9.TabIndex = 94
@@ -925,7 +935,7 @@ Partial Class MainForm
         '
         Me.Button8.BackColor = System.Drawing.Color.Lime
         Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button8.Location = New System.Drawing.Point(550, 288)
+        Me.Button8.Location = New System.Drawing.Point(550, 277)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(30, 23)
         Me.Button8.TabIndex = 93
@@ -936,7 +946,7 @@ Partial Class MainForm
         '
         Me.Button7.BackColor = System.Drawing.Color.Lime
         Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.Location = New System.Drawing.Point(550, 312)
+        Me.Button7.Location = New System.Drawing.Point(550, 301)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(30, 23)
         Me.Button7.TabIndex = 92
@@ -947,7 +957,7 @@ Partial Class MainForm
         '
         Me.Button6.BackColor = System.Drawing.Color.Lime
         Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button6.Location = New System.Drawing.Point(550, 336)
+        Me.Button6.Location = New System.Drawing.Point(550, 325)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(30, 23)
         Me.Button6.TabIndex = 91
@@ -958,7 +968,7 @@ Partial Class MainForm
         '
         Me.Button5.BackColor = System.Drawing.Color.Lime
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.Location = New System.Drawing.Point(550, 361)
+        Me.Button5.Location = New System.Drawing.Point(550, 350)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(30, 23)
         Me.Button5.TabIndex = 90
@@ -969,7 +979,7 @@ Partial Class MainForm
         '
         Me.Button4.BackColor = System.Drawing.Color.Lime
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.Location = New System.Drawing.Point(550, 408)
+        Me.Button4.Location = New System.Drawing.Point(550, 397)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(30, 23)
         Me.Button4.TabIndex = 89
@@ -980,7 +990,7 @@ Partial Class MainForm
         '
         Me.Button3.BackColor = System.Drawing.Color.Lime
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.Location = New System.Drawing.Point(549, 431)
+        Me.Button3.Location = New System.Drawing.Point(549, 420)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(30, 23)
         Me.Button3.TabIndex = 88
@@ -991,7 +1001,7 @@ Partial Class MainForm
         '
         Me.Button2.BackColor = System.Drawing.Color.Lime
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Location = New System.Drawing.Point(550, 454)
+        Me.Button2.Location = New System.Drawing.Point(550, 443)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(30, 23)
         Me.Button2.TabIndex = 87
@@ -1002,7 +1012,7 @@ Partial Class MainForm
         '
         Me.Button1.BackColor = System.Drawing.Color.Lime
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Location = New System.Drawing.Point(550, 478)
+        Me.Button1.Location = New System.Drawing.Point(550, 467)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 23)
         Me.Button1.TabIndex = 86
@@ -1011,7 +1021,7 @@ Partial Class MainForm
         '
         'Update_tables_Button
         '
-        Me.Update_tables_Button.Location = New System.Drawing.Point(433, 519)
+        Me.Update_tables_Button.Location = New System.Drawing.Point(433, 531)
         Me.Update_tables_Button.Name = "Update_tables_Button"
         Me.Update_tables_Button.Size = New System.Drawing.Size(92, 23)
         Me.Update_tables_Button.TabIndex = 172
@@ -1024,11 +1034,121 @@ Partial Class MainForm
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 173
         '
+        'Button78
+        '
+        Me.Button78.BackColor = System.Drawing.Color.Lime
+        Me.Button78.Location = New System.Drawing.Point(550, 490)
+        Me.Button78.Name = "Button78"
+        Me.Button78.Size = New System.Drawing.Size(30, 23)
+        Me.Button78.TabIndex = 174
+        Me.Button78.Text = "91"
+        Me.Button78.UseVisualStyleBackColor = False
+        '
+        'Button79
+        '
+        Me.Button79.BackColor = System.Drawing.Color.Lime
+        Me.Button79.Location = New System.Drawing.Point(518, 490)
+        Me.Button79.Name = "Button79"
+        Me.Button79.Size = New System.Drawing.Size(30, 23)
+        Me.Button79.TabIndex = 175
+        Me.Button79.Text = "90"
+        Me.Button79.UseVisualStyleBackColor = False
+        '
+        'Button80
+        '
+        Me.Button80.BackColor = System.Drawing.Color.Lime
+        Me.Button80.Location = New System.Drawing.Point(324, 262)
+        Me.Button80.Name = "Button80"
+        Me.Button80.Size = New System.Drawing.Size(30, 23)
+        Me.Button80.TabIndex = 176
+        Me.Button80.Text = "84"
+        Me.Button80.UseVisualStyleBackColor = False
+        '
+        'Button81
+        '
+        Me.Button81.BackColor = System.Drawing.Color.Lime
+        Me.Button81.Location = New System.Drawing.Point(324, 286)
+        Me.Button81.Name = "Button81"
+        Me.Button81.Size = New System.Drawing.Size(30, 23)
+        Me.Button81.TabIndex = 177
+        Me.Button81.Text = "83"
+        Me.Button81.UseVisualStyleBackColor = False
+        '
+        'Button84
+        '
+        Me.Button84.BackColor = System.Drawing.Color.Lime
+        Me.Button84.Location = New System.Drawing.Point(324, 310)
+        Me.Button84.Name = "Button84"
+        Me.Button84.Size = New System.Drawing.Size(30, 23)
+        Me.Button84.TabIndex = 178
+        Me.Button84.Text = "82"
+        Me.Button84.UseVisualStyleBackColor = False
+        '
+        'Button85
+        '
+        Me.Button85.BackColor = System.Drawing.Color.Lime
+        Me.Button85.Location = New System.Drawing.Point(292, 262)
+        Me.Button85.Name = "Button85"
+        Me.Button85.Size = New System.Drawing.Size(30, 23)
+        Me.Button85.TabIndex = 179
+        Me.Button85.Text = "85"
+        Me.Button85.UseVisualStyleBackColor = False
+        '
+        'Button86
+        '
+        Me.Button86.BackColor = System.Drawing.Color.Lime
+        Me.Button86.Location = New System.Drawing.Point(293, 286)
+        Me.Button86.Name = "Button86"
+        Me.Button86.Size = New System.Drawing.Size(30, 23)
+        Me.Button86.TabIndex = 180
+        Me.Button86.Text = "86"
+        Me.Button86.UseVisualStyleBackColor = False
+        '
+        'Button87
+        '
+        Me.Button87.BackColor = System.Drawing.Color.Lime
+        Me.Button87.Location = New System.Drawing.Point(293, 310)
+        Me.Button87.Name = "Button87"
+        Me.Button87.Size = New System.Drawing.Size(30, 23)
+        Me.Button87.TabIndex = 181
+        Me.Button87.Text = "87"
+        Me.Button87.UseVisualStyleBackColor = False
+        '
+        'Button88
+        '
+        Me.Button88.BackColor = System.Drawing.Color.Lime
+        Me.Button88.Location = New System.Drawing.Point(384, 369)
+        Me.Button88.Name = "Button88"
+        Me.Button88.Size = New System.Drawing.Size(30, 23)
+        Me.Button88.TabIndex = 182
+        Me.Button88.Text = "88"
+        Me.Button88.UseVisualStyleBackColor = False
+        '
+        'Button89
+        '
+        Me.Button89.BackColor = System.Drawing.Color.Lime
+        Me.Button89.Location = New System.Drawing.Point(419, 369)
+        Me.Button89.Name = "Button89"
+        Me.Button89.Size = New System.Drawing.Size(30, 23)
+        Me.Button89.TabIndex = 183
+        Me.Button89.Text = "89"
+        Me.Button89.UseVisualStyleBackColor = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(654, 555)
+        Me.Controls.Add(Me.Button89)
+        Me.Controls.Add(Me.Button88)
+        Me.Controls.Add(Me.Button87)
+        Me.Controls.Add(Me.Button86)
+        Me.Controls.Add(Me.Button85)
+        Me.Controls.Add(Me.Button84)
+        Me.Controls.Add(Me.Button81)
+        Me.Controls.Add(Me.Button80)
+        Me.Controls.Add(Me.Button79)
+        Me.Controls.Add(Me.Button78)
         Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.Update_tables_Button)
         Me.Controls.Add(Me.Label2)
@@ -1206,5 +1326,15 @@ Partial Class MainForm
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Update_tables_Button As System.Windows.Forms.Button
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents Button78 As System.Windows.Forms.Button
+    Friend WithEvents Button79 As System.Windows.Forms.Button
+    Friend WithEvents Button80 As System.Windows.Forms.Button
+    Friend WithEvents Button81 As System.Windows.Forms.Button
+    Friend WithEvents Button84 As System.Windows.Forms.Button
+    Friend WithEvents Button85 As System.Windows.Forms.Button
+    Friend WithEvents Button86 As System.Windows.Forms.Button
+    Friend WithEvents Button87 As System.Windows.Forms.Button
+    Friend WithEvents Button88 As System.Windows.Forms.Button
+    Friend WithEvents Button89 As System.Windows.Forms.Button
 
 End Class

@@ -1056,4 +1056,123 @@
     End Sub
 
    
+    Private Sub Button81_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button81.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 83
+        If Button81.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button78_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button78.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 91
+        If Button78.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button79_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button79.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 80
+        If Button79.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button84_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button84.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 82
+        If Button84.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button80_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button80.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 84
+        If Button80.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button85_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button85.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 85
+        If Button85.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button86_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button86.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 86
+        If Button86.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button87_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button87.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 87
+        If Button87.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button88_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button88.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 88
+        If Button88.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
+
+    Private Sub Button89_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button89.Click
+        Reserve.Show()
+        Reserve.Table_num_TextBox.Text = 89
+        If Button89.BackColor = Color.Red Then
+
+            Reserve.Reseved_label.BackColor = Color.Red
+            Reserve.Reseved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+    End Sub
 End Class
