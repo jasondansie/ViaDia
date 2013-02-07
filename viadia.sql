@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 04, 2013 at 12:18 PM
+-- Generation Time: Feb 07, 2013 at 05:30 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `april` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(11) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
@@ -58,10 +59,10 @@ CREATE TABLE IF NOT EXISTS `april` (
 -- Dumping data for table `april`
 --
 
-INSERT INTO `april` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0),
-(6, 28, 'jgkjh', 'gyigy', 7697856, '2013-04-01', '2013-04-01', 'jason', 1, 0);
+INSERT INTO `april` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, ''),
+(6, 28, 'jgkjh', 'gyigy', 7697856, '2013-04-01', '2013-04-01', 'jason', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -80,6 +81,7 @@ CREATE TABLE IF NOT EXISTS `august` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -87,11 +89,11 @@ CREATE TABLE IF NOT EXISTS `august` (
 -- Dumping data for table `august`
 --
 
-INSERT INTO `august` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `august` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -110,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `december` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -117,11 +120,11 @@ CREATE TABLE IF NOT EXISTS `december` (
 -- Dumping data for table `december`
 --
 
-INSERT INTO `december` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `december` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -140,18 +143,21 @@ CREATE TABLE IF NOT EXISTS `february` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `february`
 --
 
-INSERT INTO `february` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `february` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-02-14', 'dasar', 1, 0, ''),
+(6, 8, 'test2', 'asdfasf', 33, '2013-02-04', '2013-02-17', 'jöfj', 1, 2, ''),
+(7, 16, 'jasdon', 'jalsdfj', 234567, '2013-02-07', '2013-02-27', 'sgsfdg', 1, 3, '');
 
 -- --------------------------------------------------------
 
@@ -170,6 +176,7 @@ CREATE TABLE IF NOT EXISTS `january` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -177,11 +184,11 @@ CREATE TABLE IF NOT EXISTS `january` (
 -- Dumping data for table `january`
 --
 
-INSERT INTO `january` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `january` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -200,6 +207,7 @@ CREATE TABLE IF NOT EXISTS `july` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -207,11 +215,11 @@ CREATE TABLE IF NOT EXISTS `july` (
 -- Dumping data for table `july`
 --
 
-INSERT INTO `july` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `july` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -230,6 +238,7 @@ CREATE TABLE IF NOT EXISTS `june` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -237,10 +246,10 @@ CREATE TABLE IF NOT EXISTS `june` (
 -- Dumping data for table `june`
 --
 
-INSERT INTO `june` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 70, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0);
+INSERT INTO `june` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 70, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -259,6 +268,7 @@ CREATE TABLE IF NOT EXISTS `march` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
@@ -266,14 +276,14 @@ CREATE TABLE IF NOT EXISTS `march` (
 -- Dumping data for table `march`
 --
 
-INSERT INTO `march` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0),
-(6, 54, 'kjljaösd', 'sdfa', 2342134, '2013-03-01', '2013-03-01', '123414', 1, 0),
-(7, 45, 'jason', 'sdfasdf', 5346367, '2013-03-01', '2013-03-01', 'jason', 1, 0),
-(8, 10, 'jack b nimble', 'jack@me.com', 242435243, '2013-03-01', '2013-03-14', 'jason', 1, 0);
+INSERT INTO `march` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, ''),
+(6, 54, 'kjljaösd', 'sdfa', 2342134, '2013-03-01', '2013-03-01', '123414', 1, 0, ''),
+(7, 45, 'jason', 'sdfasdf', 5346367, '2013-03-01', '2013-03-01', 'jason', 1, 0, ''),
+(8, 10, 'jack b nimble', 'jack@me.com', 242435243, '2013-03-01', '2013-03-14', 'jason', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -292,6 +302,7 @@ CREATE TABLE IF NOT EXISTS `may` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
@@ -299,12 +310,12 @@ CREATE TABLE IF NOT EXISTS `may` (
 -- Dumping data for table `may`
 --
 
-INSERT INTO `may` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0),
-(6, 8, 'jhgjgfhgdh', 'kjhx', 987654, '2013-05-01', '2013-05-01', 'jason', 1, 0);
+INSERT INTO `may` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, ''),
+(6, 8, 'jhgjgfhgdh', 'kjhx', 987654, '2013-05-01', '2013-05-01', 'jason', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -323,6 +334,7 @@ CREATE TABLE IF NOT EXISTS `november` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -330,11 +342,11 @@ CREATE TABLE IF NOT EXISTS `november` (
 -- Dumping data for table `november`
 --
 
-INSERT INTO `november` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `november` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -353,6 +365,7 @@ CREATE TABLE IF NOT EXISTS `october` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -360,11 +373,11 @@ CREATE TABLE IF NOT EXISTS `october` (
 -- Dumping data for table `october`
 --
 
-INSERT INTO `october` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `october` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
@@ -382,31 +395,34 @@ CREATE TABLE IF NOT EXISTS `savetable` (
   `End_date` date NOT NULL,
   `Editor_name` varchar(50) NOT NULL,
   `Edit_type` varchar(10) NOT NULL,
+  `week_num` int(11) NOT NULL,
+  `comments` text NOT NULL,
   `TimeStamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `savetable`
 --
 
-INSERT INTO `savetable` (`id`, `Table_num`, `Reserver_Name`, `Email`, `phone_num`, `Begin_date`, `End_date`, `Editor_name`, `Edit_type`, `TimeStamp`) VALUES
-(1, 58, 'dfjalkj', 'adsgfasd', 0, '2013-01-25', '2013-01-25', 'jason', 'Deletion', '2013-01-25 14:36:40'),
-(2, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Deletion', '2013-01-25 14:52:02'),
-(3, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Update', '2013-01-25 16:21:21'),
-(4, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Update', '2013-01-25 16:24:12'),
-(5, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-31', '4354564565', 'Update', '2013-01-25 16:25:52'),
-(6, 33, 'ian', 'j@d', 200200200, '2013-01-25', '2013-01-31', '300300300', 'Update', '2013-01-27 19:48:14'),
-(7, 33, 'ian', 'j@d', 456789, '2013-01-25', '2013-01-31', '9999999', 'Deletion', '2013-01-27 19:48:31'),
-(8, 39, '39', 'jasdfkjöf', 0, '2013-01-31', '2013-02-09', '1/25/2013', 'Update', '2013-01-28 08:59:28'),
-(9, 34, 'jason', 'ajflj', 564856, '2013-02-07', '2013-02-14', 'jaond', 'Update', '2013-01-28 09:04:13'),
-(10, 33, 'wraefgds', 'sdfgsdf', 123456, '2013-01-25', '2013-01-25', 'jason', 'Deletion', '2013-01-28 09:05:25'),
-(11, 39, 'jasdfkjöf', 'fasdfasdfad', 356365, '2013-01-31', '2013-02-09', 'dasar', 'Update', '2013-01-28 09:17:14'),
-(12, 15, 'jasohn', 'fasdfas', 45635756, '2013-05-01', '2013-05-01', 'jason', 'Update', '2013-01-28 12:02:18'),
-(13, 15, 'dasar', 'fasdfas', 45635756, '2013-05-01', '2013-05-01', 'jason', 'Deletion', '2013-01-28 12:03:46'),
-(14, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 'Deletion', '2013-01-28 12:04:03'),
-(15, 28, 'dasar', 'hello', 887878, '2013-01-25', '2013-01-25', 'jason', 'Update', '2013-02-02 10:35:47'),
-(16, 28, 'dasar', 'yiouyytf', 887878, '2013-01-25', '2013-01-25', 'jason', 'Deletion', '2013-02-02 10:35:56');
+INSERT INTO `savetable` (`id`, `Table_num`, `Reserver_Name`, `Email`, `phone_num`, `Begin_date`, `End_date`, `Editor_name`, `Edit_type`, `week_num`, `comments`, `TimeStamp`) VALUES
+(1, 58, 'dfjalkj', 'adsgfasd', 0, '2013-01-25', '2013-01-25', 'jason', 'Deletion', 0, '', '2013-01-25 14:36:40'),
+(2, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Deletion', 0, '', '2013-01-25 14:52:02'),
+(3, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Update', 0, '', '2013-01-25 16:21:21'),
+(4, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-25', '4354564565', 'Update', 0, '', '2013-01-25 16:24:12'),
+(5, 33, 'ian', 'öadjföadjkd', 34543565, '2013-01-25', '2013-01-31', '4354564565', 'Update', 0, '', '2013-01-25 16:25:52'),
+(6, 33, 'ian', 'j@d', 200200200, '2013-01-25', '2013-01-31', '300300300', 'Update', 0, '', '2013-01-27 19:48:14'),
+(7, 33, 'ian', 'j@d', 456789, '2013-01-25', '2013-01-31', '9999999', 'Deletion', 0, '', '2013-01-27 19:48:31'),
+(8, 39, '39', 'jasdfkjöf', 0, '2013-01-31', '2013-02-09', '1/25/2013', 'Update', 0, '', '2013-01-28 08:59:28'),
+(9, 34, 'jason', 'ajflj', 564856, '2013-02-07', '2013-02-14', 'jaond', 'Update', 0, '', '2013-01-28 09:04:13'),
+(10, 33, 'wraefgds', 'sdfgsdf', 123456, '2013-01-25', '2013-01-25', 'jason', 'Deletion', 0, '', '2013-01-28 09:05:25'),
+(11, 39, 'jasdfkjöf', 'fasdfasdfad', 356365, '2013-01-31', '2013-02-09', 'dasar', 'Update', 0, '', '2013-01-28 09:17:14'),
+(12, 15, 'jasohn', 'fasdfas', 45635756, '2013-05-01', '2013-05-01', 'jason', 'Update', 0, '', '2013-01-28 12:02:18'),
+(13, 15, 'dasar', 'fasdfas', 45635756, '2013-05-01', '2013-05-01', 'jason', 'Deletion', 0, '', '2013-01-28 12:03:46'),
+(14, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 'Deletion', 0, '', '2013-01-28 12:04:03'),
+(15, 28, 'dasar', 'hello', 887878, '2013-01-25', '2013-01-25', 'jason', 'Update', 0, '', '2013-02-02 10:35:47'),
+(16, 28, 'dasar', 'yiouyytf', 887878, '2013-01-25', '2013-01-25', 'jason', 'Deletion', 0, '', '2013-02-02 10:35:56'),
+(17, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-02-14', 'dasar', 'Update', 0, '', '2013-02-04 11:54:31');
 
 -- --------------------------------------------------------
 
@@ -425,6 +441,7 @@ CREATE TABLE IF NOT EXISTS `september` (
   `Editor_Name` varchar(50) NOT NULL,
   `Reserved` int(5) NOT NULL,
   `week_num` int(3) NOT NULL,
+  `comments` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -432,11 +449,11 @@ CREATE TABLE IF NOT EXISTS `september` (
 -- Dumping data for table `september`
 --
 
-INSERT INTO `september` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`) VALUES
-(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0),
-(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0),
-(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0),
-(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0);
+INSERT INTO `september` (`id`, `Table_num`, `Reserver_name`, `Email`, `Phone_num`, `Begin_date`, `End_date`, `Editor_Name`, `Reserved`, `week_num`, `comments`) VALUES
+(1, 34, 'jason', 'jack@joe.com', 405768767, '2013-02-07', '2013-02-14', 'jaond', 1, 0, ''),
+(3, 39, 'jasdfkjöf', 'fasdfasdfad', 2147483647, '2013-01-31', '2013-02-09', 'dasar', 1, 0, ''),
+(4, 59, 'jack', 'j@g.com', 345345456, '2013-02-06', '2013-02-13', 'jason', 1, 0, ''),
+(5, 2, 'jane', 'jane@hel', 2345563, '2013-01-25', '2013-01-25', 'dasar', 1, 0, '');
 
 -- --------------------------------------------------------
 
