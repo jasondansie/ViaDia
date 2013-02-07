@@ -52,6 +52,7 @@ Partial Class Reserve
         '
         'Table_num_TextBox
         '
+        Me.Table_num_TextBox.Enabled = False
         Me.Table_num_TextBox.Location = New System.Drawing.Point(82, 31)
         Me.Table_num_TextBox.Name = "Table_num_TextBox"
         Me.Table_num_TextBox.Size = New System.Drawing.Size(100, 20)
@@ -104,7 +105,7 @@ Partial Class Reserve
         Me.Label4.Location = New System.Drawing.Point(224, 38)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(60, 13)
-        Me.Label4.TabIndex = 7
+        Me.Label4.TabIndex = 9
         Me.Label4.Text = "Begin Date"
         '
         'Label5
@@ -113,7 +114,7 @@ Partial Class Reserve
         Me.Label5.Location = New System.Drawing.Point(224, 106)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
-        Me.Label5.TabIndex = 9
+        Me.Label5.TabIndex = 13
         Me.Label5.Text = "End Date"
         '
         'Save_Button
@@ -121,7 +122,7 @@ Partial Class Reserve
         Me.Save_Button.Location = New System.Drawing.Point(29, 190)
         Me.Save_Button.Name = "Save_Button"
         Me.Save_Button.Size = New System.Drawing.Size(75, 23)
-        Me.Save_Button.TabIndex = 10
+        Me.Save_Button.TabIndex = 16
         Me.Save_Button.Text = "Save"
         Me.Save_Button.UseVisualStyleBackColor = True
         '
@@ -140,7 +141,7 @@ Partial Class Reserve
         Me.Close_Button.Location = New System.Drawing.Point(369, 190)
         Me.Close_Button.Name = "Close_Button"
         Me.Close_Button.Size = New System.Drawing.Size(75, 23)
-        Me.Close_Button.TabIndex = 14
+        Me.Close_Button.TabIndex = 19
         Me.Close_Button.Text = "Close"
         Me.Close_Button.UseVisualStyleBackColor = True
         '
@@ -149,7 +150,7 @@ Partial Class Reserve
         Me.Edit_Button.Location = New System.Drawing.Point(141, 190)
         Me.Edit_Button.Name = "Edit_Button"
         Me.Edit_Button.Size = New System.Drawing.Size(75, 23)
-        Me.Edit_Button.TabIndex = 15
+        Me.Edit_Button.TabIndex = 17
         Me.Edit_Button.Text = "Edit"
         Me.Edit_Button.UseVisualStyleBackColor = True
         '
@@ -158,7 +159,7 @@ Partial Class Reserve
         Me.Delete_Button.Location = New System.Drawing.Point(259, 190)
         Me.Delete_Button.Name = "Delete_Button"
         Me.Delete_Button.Size = New System.Drawing.Size(75, 23)
-        Me.Delete_Button.TabIndex = 16
+        Me.Delete_Button.TabIndex = 18
         Me.Delete_Button.Text = "Delete"
         Me.Delete_Button.UseVisualStyleBackColor = True
         '
@@ -168,7 +169,7 @@ Partial Class Reserve
         Me.DateTimePicker1.Location = New System.Drawing.Point(321, 32)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(103, 20)
-        Me.DateTimePicker1.TabIndex = 17
+        Me.DateTimePicker1.TabIndex = 8
         Me.DateTimePicker1.Value = New Date(2013, 1, 25, 0, 0, 0, 0)
         '
         'DateTimePicker2
@@ -177,7 +178,7 @@ Partial Class Reserve
         Me.DateTimePicker2.Location = New System.Drawing.Point(321, 106)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(103, 20)
-        Me.DateTimePicker2.TabIndex = 18
+        Me.DateTimePicker2.TabIndex = 12
         Me.DateTimePicker2.Value = New Date(2013, 1, 25, 0, 0, 0, 0)
         '
         'Editor_label
@@ -186,7 +187,7 @@ Partial Class Reserve
         Me.Editor_label.Location = New System.Drawing.Point(224, 135)
         Me.Editor_label.Name = "Editor_label"
         Me.Editor_label.Size = New System.Drawing.Size(64, 13)
-        Me.Editor_label.TabIndex = 19
+        Me.Editor_label.TabIndex = 15
         Me.Editor_label.Text = "Seller Name"
         '
         'Editor_TextBox
@@ -194,7 +195,7 @@ Partial Class Reserve
         Me.Editor_TextBox.Location = New System.Drawing.Point(321, 141)
         Me.Editor_TextBox.Name = "Editor_TextBox"
         Me.Editor_TextBox.Size = New System.Drawing.Size(103, 20)
-        Me.Editor_TextBox.TabIndex = 20
+        Me.Editor_TextBox.TabIndex = 14
         '
         'Label1
         '
@@ -202,7 +203,7 @@ Partial Class Reserve
         Me.Label1.Location = New System.Drawing.Point(29, 142)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 13)
-        Me.Label1.TabIndex = 22
+        Me.Label1.TabIndex = 7
         Me.Label1.Text = "Phone #"
         '
         'Phone_Num_TextBox
@@ -211,7 +212,7 @@ Partial Class Reserve
         Me.Phone_Num_TextBox.Location = New System.Drawing.Point(82, 139)
         Me.Phone_Num_TextBox.Name = "Phone_Num_TextBox"
         Me.Phone_Num_TextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Phone_Num_TextBox.TabIndex = 21
+        Me.Phone_Num_TextBox.TabIndex = 6
         '
         'Num_Week
         '
@@ -228,7 +229,7 @@ Partial Class Reserve
         Me.Label6.Location = New System.Drawing.Point(224, 79)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 13)
-        Me.Label6.TabIndex = 24
+        Me.Label6.TabIndex = 11
         Me.Label6.Text = "Reserved Time"
         '
         'Week_ComboBox
@@ -238,7 +239,7 @@ Partial Class Reserve
         Me.Week_ComboBox.Location = New System.Drawing.Point(321, 71)
         Me.Week_ComboBox.Name = "Week_ComboBox"
         Me.Week_ComboBox.Size = New System.Drawing.Size(103, 21)
-        Me.Week_ComboBox.TabIndex = 25
+        Me.Week_ComboBox.TabIndex = 10
         '
         'Week_Label
         '
