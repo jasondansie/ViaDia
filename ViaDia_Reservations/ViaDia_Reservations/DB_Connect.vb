@@ -38,7 +38,7 @@ Public Class DB_Connect
         Return Table_name
 
     End Function
-    Shared Sub Insert2DB(ByRef Imonth As Integer, ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String)
+    Shared Sub Insert2DB(ByRef Imonth As Integer, ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String, ByRef week_num As String)
 
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
           & "User Id=root;Password="
@@ -55,7 +55,7 @@ Public Class DB_Connect
             Table_name = Convert_Month(Imonth)
 
             cmd.Connection = conn
-            query = "INSERT INTO " & Table_name & "(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1')"
+            query = "INSERT INTO " & Table_name & "(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved, week_num) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1', '" + week_num + "')"
 
 
             cmd.CommandText = query
@@ -105,6 +105,7 @@ Public Class DB_Connect
                     Reserve.DateTimePicker2.Text = objDataset.Tables("Table").Rows(0).Item(6).ToString
                     Reserve.Phone_Num_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(4)
                     Reserve.Editor_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(7)
+                    Reserve.Week_Label.Text = objDataset.Tables("Table").Rows(0).Item(9)
                     Reserve.Reseved_label.BackColor = Color.Red
                     Reserve.Reseved_label.Text = "Resevered"
 

@@ -8,7 +8,7 @@
         Imonth = MainForm.MonthCalendar1.SelectionStart.ToShortDateString()
         Cmonth = Val(Imonth)
 
-        DB_Connect.Insert2DB(Cmonth, Table_num_TextBox.Text, Name_TextBox.Text, Email_TextBox.Text, Phone_Num_TextBox.Text, DateTimePicker1.Text, DateTimePicker2.Text, Editor_TextBox.Text)
+        DB_Connect.Insert2DB(Cmonth, Table_num_TextBox.Text, Name_TextBox.Text, Email_TextBox.Text, Phone_Num_TextBox.Text, DateTimePicker1.Text, DateTimePicker2.Text, Editor_TextBox.Text, Week_ComboBox.Text)
 
         
         button = button & Table_num_TextBox.Text
@@ -96,25 +96,25 @@
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.Text = "0" Then
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Week_ComboBox.SelectedIndexChanged
+        If Week_ComboBox.Text = "0" Then
             DateTimePicker2.Value = DateTimePicker1.Value
 
-        ElseIf ComboBox1.Text = "1" Then
+        ElseIf Week_ComboBox.Text = "1" Then
             Num_week.Text = "1"
 
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(7)
 
-        ElseIf ComboBox1.Text = "2" Then
+        ElseIf Week_ComboBox.Text = "2" Then
             Num_week.Text = "2"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+13)
 
-        ElseIf ComboBox1.Text = "3" Then
+        ElseIf Week_ComboBox.Text = "3" Then
 
             Num_week.Text = "3"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+20)
 
-        ElseIf ComboBox1.Text = "4" Then
+        ElseIf Week_ComboBox.Text = "4" Then
             Num_week.Text = "4"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+27)
 
@@ -129,8 +129,8 @@
         DateTimePicker2.Value = DateTimePicker1.Value
 
     End Sub
-    Private Sub ComboBox1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ComboBox1.MouseClick
-        If ComboBox1.Capture = True Then
+    Private Sub ComboBox1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Week_ComboBox.MouseClick
+        If Week_ComboBox.Capture = True Then
             DateTimePicker2.Value = DateTimePicker1.Value
         End If
 

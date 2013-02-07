@@ -45,7 +45,8 @@ Partial Class Reserve
         Me.Phone_Num_TextBox = New System.Windows.Forms.TextBox()
         Me.Num_Week = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Week_ComboBox = New System.Windows.Forms.ComboBox()
+        Me.Week_Label = New System.Windows.Forms.Label()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -217,9 +218,9 @@ Partial Class Reserve
         Me.Num_Week.AutoSize = True
         Me.Num_Week.Location = New System.Drawing.Point(442, 79)
         Me.Num_Week.Name = "Num_Week"
-        Me.Num_Week.Size = New System.Drawing.Size(36, 13)
+        Me.Num_Week.Size = New System.Drawing.Size(39, 13)
         Me.Num_Week.TabIndex = 23
-        Me.Num_Week.Text = "Week"
+        Me.Num_Week.Text = "Week:"
         '
         'Label6
         '
@@ -230,21 +231,31 @@ Partial Class Reserve
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Reserved Time"
         '
-        'ComboBox1
+        'Week_ComboBox
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.ComboBox1.Location = New System.Drawing.Point(321, 71)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(103, 21)
-        Me.ComboBox1.TabIndex = 25
+        Me.Week_ComboBox.FormattingEnabled = True
+        Me.Week_ComboBox.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        Me.Week_ComboBox.Location = New System.Drawing.Point(321, 71)
+        Me.Week_ComboBox.Name = "Week_ComboBox"
+        Me.Week_ComboBox.Size = New System.Drawing.Size(103, 21)
+        Me.Week_ComboBox.TabIndex = 25
+        '
+        'Week_Label
+        '
+        Me.Week_Label.AutoSize = True
+        Me.Week_Label.Location = New System.Drawing.Point(499, 79)
+        Me.Week_Label.Name = "Week_Label"
+        Me.Week_Label.Size = New System.Drawing.Size(39, 13)
+        Me.Week_Label.TabIndex = 26
+        Me.Week_Label.Text = "Label3"
         '
         'Reserve
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 327)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Week_Label)
+        Me.Controls.Add(Me.Week_ComboBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Num_Week)
         Me.Controls.Add(Me.Label1)
@@ -295,5 +306,6 @@ Partial Class Reserve
     Friend WithEvents Phone_Num_TextBox As System.Windows.Forms.TextBox
     Friend WithEvents Num_Week As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Week_ComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents Week_Label As System.Windows.Forms.Label
 End Class
