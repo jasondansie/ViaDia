@@ -43,10 +43,12 @@ Partial Class Reserve
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Phone_Num_TextBox = New System.Windows.Forms.TextBox()
-        Me.Num_Week = New System.Windows.Forms.Label()
+        Me.label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Week_ComboBox = New System.Windows.Forms.ComboBox()
         Me.Week_Label = New System.Windows.Forms.Label()
+        Me.Comment_TextBox = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,7 +121,7 @@ Partial Class Reserve
         '
         'Save_Button
         '
-        Me.Save_Button.Location = New System.Drawing.Point(29, 190)
+        Me.Save_Button.Location = New System.Drawing.Point(32, 278)
         Me.Save_Button.Name = "Save_Button"
         Me.Save_Button.Size = New System.Drawing.Size(75, 23)
         Me.Save_Button.TabIndex = 16
@@ -138,7 +140,7 @@ Partial Class Reserve
         '
         'Close_Button
         '
-        Me.Close_Button.Location = New System.Drawing.Point(369, 190)
+        Me.Close_Button.Location = New System.Drawing.Point(372, 278)
         Me.Close_Button.Name = "Close_Button"
         Me.Close_Button.Size = New System.Drawing.Size(75, 23)
         Me.Close_Button.TabIndex = 19
@@ -147,7 +149,7 @@ Partial Class Reserve
         '
         'Edit_Button
         '
-        Me.Edit_Button.Location = New System.Drawing.Point(141, 190)
+        Me.Edit_Button.Location = New System.Drawing.Point(144, 278)
         Me.Edit_Button.Name = "Edit_Button"
         Me.Edit_Button.Size = New System.Drawing.Size(75, 23)
         Me.Edit_Button.TabIndex = 17
@@ -156,7 +158,7 @@ Partial Class Reserve
         '
         'Delete_Button
         '
-        Me.Delete_Button.Location = New System.Drawing.Point(259, 190)
+        Me.Delete_Button.Location = New System.Drawing.Point(262, 278)
         Me.Delete_Button.Name = "Delete_Button"
         Me.Delete_Button.Size = New System.Drawing.Size(75, 23)
         Me.Delete_Button.TabIndex = 18
@@ -214,14 +216,14 @@ Partial Class Reserve
         Me.Phone_Num_TextBox.Size = New System.Drawing.Size(100, 20)
         Me.Phone_Num_TextBox.TabIndex = 6
         '
-        'Num_Week
+        'label10
         '
-        Me.Num_Week.AutoSize = True
-        Me.Num_Week.Location = New System.Drawing.Point(442, 79)
-        Me.Num_Week.Name = "Num_Week"
-        Me.Num_Week.Size = New System.Drawing.Size(39, 13)
-        Me.Num_Week.TabIndex = 23
-        Me.Num_Week.Text = "Week:"
+        Me.label10.AutoSize = True
+        Me.label10.Location = New System.Drawing.Point(442, 79)
+        Me.label10.Name = "label10"
+        Me.label10.Size = New System.Drawing.Size(39, 13)
+        Me.label10.TabIndex = 23
+        Me.label10.Text = "Week:"
         '
         'Label6
         '
@@ -246,19 +248,38 @@ Partial Class Reserve
         Me.Week_Label.AutoSize = True
         Me.Week_Label.Location = New System.Drawing.Point(499, 79)
         Me.Week_Label.Name = "Week_Label"
-        Me.Week_Label.Size = New System.Drawing.Size(39, 13)
+        Me.Week_Label.Size = New System.Drawing.Size(21, 13)
         Me.Week_Label.TabIndex = 26
-        Me.Week_Label.Text = "Label3"
+        Me.Week_Label.Text = "lab"
+        '
+        'Comment_TextBox
+        '
+        Me.Comment_TextBox.Location = New System.Drawing.Point(32, 205)
+        Me.Comment_TextBox.Multiline = True
+        Me.Comment_TextBox.Name = "Comment_TextBox"
+        Me.Comment_TextBox.Size = New System.Drawing.Size(392, 54)
+        Me.Comment_TextBox.TabIndex = 27
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(32, 186)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(107, 13)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Comments (500 char)"
         '
         'Reserve
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 327)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Comment_TextBox)
         Me.Controls.Add(Me.Week_Label)
         Me.Controls.Add(Me.Week_ComboBox)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Num_Week)
+        Me.Controls.Add(Me.label10)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Phone_Num_TextBox)
         Me.Controls.Add(Me.Editor_TextBox)
@@ -305,8 +326,10 @@ Partial Class Reserve
     Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Phone_Num_TextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Num_Week As System.Windows.Forms.Label
+    Friend WithEvents label10 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Week_ComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents Week_Label As System.Windows.Forms.Label
+    Friend WithEvents Comment_TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

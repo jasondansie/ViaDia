@@ -8,7 +8,7 @@
         Imonth = MainForm.MonthCalendar1.SelectionStart.ToShortDateString()
         Cmonth = Val(Imonth)
 
-        DB_Connect.Insert2DB(Cmonth, Table_num_TextBox.Text, Name_TextBox.Text, Email_TextBox.Text, Phone_Num_TextBox.Text, DateTimePicker1.Text, DateTimePicker2.Text, Editor_TextBox.Text, Week_ComboBox.Text)
+        DB_Connect.Insert2DB(Cmonth, Table_num_TextBox.Text, Name_TextBox.Text, Email_TextBox.Text, Phone_Num_TextBox.Text, DateTimePicker1.Text, DateTimePicker2.Text, Editor_TextBox.Text, Week_ComboBox.Text, Comment_TextBox.Text)
 
         
         button = button & Table_num_TextBox.Text
@@ -66,6 +66,8 @@
         DateTimePicker2.CustomFormat = "yyyy/MM/dd"
         DateTimePicker1.Text = MainForm.Get_date()
         DateTimePicker2.Text = MainForm.Get_date()
+        Week_Label.Enabled = False
+        Week_Label.Text = ""
 
 
 
@@ -101,27 +103,27 @@
             DateTimePicker2.Value = DateTimePicker1.Value
 
         ElseIf Week_ComboBox.Text = "1" Then
-            Num_week.Text = "1"
+            label10.Text = "1"
 
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(7)
 
         ElseIf Week_ComboBox.Text = "2" Then
-            Num_week.Text = "2"
+            label10.Text = "2"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+13)
 
         ElseIf Week_ComboBox.Text = "3" Then
 
-            Num_week.Text = "3"
+            label10.Text = "3"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+20)
 
         ElseIf Week_ComboBox.Text = "4" Then
-            Num_week.Text = "4"
+            label10.Text = "4"
             DateTimePicker2.Value = DateTimePicker2.Value.AddDays(+27)
 
         End If
     End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Num_Week.Click
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles label10.Click
 
     End Sub
 

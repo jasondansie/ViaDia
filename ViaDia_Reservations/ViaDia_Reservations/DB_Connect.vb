@@ -38,7 +38,7 @@ Public Class DB_Connect
         Return Table_name
 
     End Function
-    Shared Sub Insert2DB(ByRef Imonth As Integer, ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String, ByRef week_num As String)
+    Shared Sub Insert2DB(ByRef Imonth As Integer, ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String, ByRef week_num As String, ByRef comments As String)
 
         Dim connString As String = "Database=viadia;Data Source=localhost;" _
           & "User Id=root;Password="
@@ -55,7 +55,7 @@ Public Class DB_Connect
             Table_name = Convert_Month(Imonth)
 
             cmd.Connection = conn
-            query = "INSERT INTO " & Table_name & "(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved, week_num) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1', '" + week_num + "')"
+            query = "INSERT INTO " & Table_name & "(Table_num, Reserver_name, Email, Phone_num, Begin_date, End_date, Editor_Name, Reserved, week_num, comments) VALUES('" + table_num + "', '" + Rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', '1', '" + week_num + "', '" + comments + "')"
 
 
             cmd.CommandText = query
@@ -105,7 +105,9 @@ Public Class DB_Connect
                     Reserve.DateTimePicker2.Text = objDataset.Tables("Table").Rows(0).Item(6).ToString
                     Reserve.Phone_Num_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(4)
                     Reserve.Editor_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(7)
+                    Reserve.Week_Label.Enabled = True
                     Reserve.Week_Label.Text = objDataset.Tables("Table").Rows(0).Item(9)
+                    Reserve.Comment_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(10)
                     Reserve.Reseved_label.BackColor = Color.Red
                     Reserve.Reseved_label.Text = "Resevered"
 
@@ -224,6 +226,8 @@ Public Class DB_Connect
         Dim editor As String
         Dim tablenum As String
         Dim Table_name As String
+        Dim Week_num As String
+        Dim comments As String
 
         Try
             Table_name = Convert_Month(Imonth)
@@ -241,6 +245,8 @@ Public Class DB_Connect
             bdate = Reserve.DateTimePicker1.Text
             edate = Reserve.DateTimePicker2.Text
             editor = objDataset.Tables("Table").Rows(0).Item(7)
+            Week_num = objDataset.Tables("Table").Rows(0).Item(9)
+            comments = objDataset.Tables("Table").Rows(0).Item(10)
 
             cmd.Connection = conn
 
@@ -249,7 +255,7 @@ Public Class DB_Connect
 
 
             Try
-                cmd.CommandText = "INSERT INTO savetable(Table_num, Reserver_Name, Email, phone_num, Begin_date, End_date, Editor_Name, Edit_type) VALUES('" + tablenum + "', '" + rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', 'Deletion')"
+                cmd.CommandText = "INSERT INTO savetable(Table_num, Reserver_Name, Email, phone_num, Begin_date, End_date, Editor_Name, Edit_type, week_num, comments) VALUES('" + tablenum + "', '" + rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', 'Update', '" + Week_num + "', '" + comments + "')"
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
 
@@ -294,6 +300,8 @@ Public Class DB_Connect
         Dim tablenum As String
         Dim Edit_Table_name As String
         Dim Table_name As String
+        Dim Week_num As String
+        Dim comments As String
 
         Try
             conn.Open()
@@ -314,11 +322,13 @@ Public Class DB_Connect
             bdate = Reserve.DateTimePicker1.Text
             edate = Reserve.DateTimePicker2.Text
             editor = objDataset.Tables("Table").Rows(0).Item(7)
+            Week_num = objDataset.Tables("Table").Rows(0).Item(9)
+            comments = objDataset.Tables("Table").Rows(0).Item(10)
 
             cmd.Connection = conn
 
             Try
-                cmd.CommandText = "INSERT INTO savetable(Table_num, Reserver_Name, Email, phone_num, Begin_date, End_date, Editor_Name, Edit_type) VALUES('" + tablenum + "', '" + rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', 'Update')"
+                cmd.CommandText = "INSERT INTO savetable(Table_num, Reserver_Name, Email, phone_num, Begin_date, End_date, Editor_Name, Edit_type, week_num, comments) VALUES('" + tablenum + "', '" + rname + "', '" + email + "', '" + phone_num + "', '" + bdate + "', '" + edate + "', '" + editor + "', 'Update', '" + Week_num + "', '" + comments + "')"
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
 
@@ -328,10 +338,10 @@ Public Class DB_Connect
 
             Try
 
-                Edit_Table_name = "UPDATE " & Table_name & " set Table_num = '" + table_num + "', Reserver_name = '" + Reserve.Name_TextBox.Text + "', Email = '" + Reserve.Email_TextBox.Text + "', Phone_num = '" + Reserve.Phone_Num_TextBox.Text + "', Begin_date = '" + Reserve.DateTimePicker1.Text + "', End_date = '" + Reserve.DateTimePicker2.Text + "', Editor_Name = '" + Reserve.Editor_TextBox.Text + "', Reserved = '1'  WHERE Table_num = '" + table_num + "'"
+                Edit_Table_name = "UPDATE " & Table_name & " set Table_num = '" + table_num + "', Reserver_name = '" + Reserve.Name_TextBox.Text + "', Email = '" + Reserve.Email_TextBox.Text + "', Phone_num = '" + Reserve.Phone_Num_TextBox.Text + "', Begin_date = '" + Reserve.DateTimePicker1.Text + "', End_date = '" + Reserve.DateTimePicker2.Text + "', Editor_Name = '" + Reserve.Editor_TextBox.Text + "', Reserved = '1', week_num = '" + Reserve.Week_ComboBox.Text + "', comments = '" + Reserve.Comment_TextBox.Text + "'  WHERE Table_num = '" + table_num + "'"
 
                 cmd.CommandText = Edit_Table_name
-                MsgBox(cmd.CommandText)
+                'MsgBox(cmd.CommandText)
                 cmd.Prepare()
                 cmd.ExecuteNonQuery()
 

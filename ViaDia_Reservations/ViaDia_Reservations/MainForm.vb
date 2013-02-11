@@ -1175,4 +1175,8 @@
         End If
         Reserve.Check_table()
     End Sub
+
+    Private Sub MainForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
