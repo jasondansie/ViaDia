@@ -1,6 +1,7 @@
 ﻿Public Class Reserve
 
     Private Sub Save_Button_Click(sender As System.Object, e As System.EventArgs) Handles Save_Button.Click
+       
         Dim button As String = "Button"
         Dim Imonth As String
         Dim Cmonth As Integer
@@ -10,7 +11,7 @@
 
         DB_Connect.Insert2DB(Cmonth, Table_num_TextBox.Text, Name_TextBox.Text, Email_TextBox.Text, Phone_Num_TextBox.Text, DateTimePicker1.Text, DateTimePicker2.Text, Editor_TextBox.Text, Week_ComboBox.Text, Comment_TextBox.Text)
 
-        
+
         button = button & Table_num_TextBox.Text
         Me.Close()
         MainForm.clearbuttons()
@@ -95,7 +96,7 @@
             DB_Connect.Update_Table_Color(Cmonth)
 
         End If
-
+       
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Week_ComboBox.SelectedIndexChanged
@@ -138,4 +139,20 @@
 
     End Sub
 
+    Private Sub Reserved_label_BackColorChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Reserved_label.BackColorChanged
+
+        If Reserved_label.BackColor = Color.Lime Then
+            Edit_Button.Enabled = False
+
+        End If
+
+        If Reserved_label.BackColor = Color.Red Then
+            Save_Button.Enabled = False
+            Edit_Button.Text = "save"
+            Edit_Button.Enabled = True
+        End If
+
+    End Sub
 End Class
+
+

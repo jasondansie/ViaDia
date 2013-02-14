@@ -13,7 +13,7 @@
         MainForm.Button83.BackColor = Color.Red
         MainForm.Update_tables_Button.BackColor = Color.LightGray
         MainForm.Done_Button.BackColor = Color.LightGray
-       
+
 
     End Sub
 
@@ -89,7 +89,7 @@
             Button83.BackColor = Color.Red
 
         End If
-       
+
     End Sub
 
 
@@ -99,22 +99,22 @@
         Reserve.Table_num_TextBox.Text = 1
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
     End Sub
 
-    
+
 
     Private Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
         Reserve.Show()
         Reserve.Table_num_TextBox.Text = 2
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -125,8 +125,8 @@
         Reserve.Table_num_TextBox.Text = 3
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -137,8 +137,8 @@
         Reserve.Table_num_TextBox.Text = 4
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -149,8 +149,8 @@
         Reserve.Table_num_TextBox.Text = 5
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -163,8 +163,8 @@
         Reserve.Table_num_TextBox.Text = 6
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -175,8 +175,8 @@
         Reserve.Table_num_TextBox.Text = 7
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -187,8 +187,8 @@
         Reserve.Table_num_TextBox.Text = 8
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -200,8 +200,8 @@
         Reserve.Table_num_TextBox.Text = 9
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -213,8 +213,8 @@
         Reserve.Table_num_TextBox.Text = 10
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -226,8 +226,8 @@
         Reserve.Table_num_TextBox.Text = 11
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -239,8 +239,8 @@
         Reserve.Table_num_TextBox.Text = 12
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -252,8 +252,8 @@
         Reserve.Table_num_TextBox.Text = 13
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -265,8 +265,8 @@
         Reserve.Table_num_TextBox.Text = 14
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -278,8 +278,8 @@
         Reserve.Table_num_TextBox.Text = 15
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -291,8 +291,8 @@
         Reserve.Table_num_TextBox.Text = 16
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -304,8 +304,8 @@
         Reserve.Table_num_TextBox.Text = 17
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -317,8 +317,8 @@
         Reserve.Table_num_TextBox.Text = 18
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -330,8 +330,8 @@
         Reserve.Table_num_TextBox.Text = 19
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -343,8 +343,8 @@
         Reserve.Table_num_TextBox.Text = 20
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -356,8 +356,8 @@
         Reserve.Table_num_TextBox.Text = 21
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -369,8 +369,8 @@
         Reserve.Table_num_TextBox.Text = 22
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -382,8 +382,8 @@
         Reserve.Table_num_TextBox.Text = 23
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -395,8 +395,8 @@
         Reserve.Table_num_TextBox.Text = 24
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
 
@@ -409,8 +409,8 @@
         Reserve.Table_num_TextBox.Text = 25
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -421,8 +421,8 @@
         Reserve.Table_num_TextBox.Text = 26
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -433,8 +433,8 @@
         Reserve.Table_num_TextBox.Text = 27
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -445,8 +445,8 @@
         Reserve.Table_num_TextBox.Text = 28
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -457,8 +457,8 @@
         Reserve.Table_num_TextBox.Text = 29
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -469,8 +469,8 @@
         Reserve.Table_num_TextBox.Text = 30
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -481,8 +481,8 @@
         Reserve.Table_num_TextBox.Text = 31
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -493,8 +493,8 @@
         Reserve.Table_num_TextBox.Text = 32
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -505,8 +505,8 @@
         Reserve.Table_num_TextBox.Text = 33
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -517,8 +517,8 @@
         Reserve.Table_num_TextBox.Text = 34
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -529,8 +529,8 @@
         Reserve.Table_num_TextBox.Text = 35
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -541,8 +541,8 @@
         Reserve.Table_num_TextBox.Text = 36
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -553,8 +553,8 @@
         Reserve.Table_num_TextBox.Text = 37
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -565,8 +565,8 @@
         Reserve.Table_num_TextBox.Text = 38
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -577,8 +577,8 @@
         Reserve.Table_num_TextBox.Text = 39
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -589,8 +589,8 @@
         Reserve.Table_num_TextBox.Text = 40
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -601,8 +601,8 @@
         Reserve.Table_num_TextBox.Text = 41
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -613,8 +613,8 @@
         Reserve.Table_num_TextBox.Text = 42
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -625,8 +625,8 @@
         Reserve.Table_num_TextBox.Text = 43
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -637,8 +637,8 @@
         Reserve.Table_num_TextBox.Text = 44
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -649,8 +649,8 @@
         Reserve.Table_num_TextBox.Text = 45
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -661,8 +661,8 @@
         Reserve.Table_num_TextBox.Text = 46
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -673,8 +673,8 @@
         Reserve.Table_num_TextBox.Text = 47
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -685,8 +685,8 @@
         Reserve.Table_num_TextBox.Text = 48
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -697,8 +697,8 @@
         Reserve.Table_num_TextBox.Text = 49
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -709,8 +709,8 @@
         Reserve.Table_num_TextBox.Text = 50
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -721,8 +721,8 @@
         Reserve.Table_num_TextBox.Text = 51
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -733,8 +733,8 @@
         Reserve.Table_num_TextBox.Text = 52
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -745,8 +745,8 @@
         Reserve.Table_num_TextBox.Text = 53
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -757,8 +757,8 @@
         Reserve.Table_num_TextBox.Text = 54
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -769,8 +769,8 @@
         Reserve.Table_num_TextBox.Text = 55
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -781,8 +781,8 @@
         Reserve.Table_num_TextBox.Text = 56
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -793,8 +793,8 @@
         Reserve.Table_num_TextBox.Text = 57
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -805,8 +805,8 @@
         Reserve.Table_num_TextBox.Text = 58
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -817,8 +817,8 @@
         Reserve.Table_num_TextBox.Text = 59
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -829,8 +829,8 @@
         Reserve.Table_num_TextBox.Text = 60
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -841,8 +841,8 @@
         Reserve.Table_num_TextBox.Text = 61
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -853,8 +853,8 @@
         Reserve.Table_num_TextBox.Text = 62
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -865,8 +865,8 @@
         Reserve.Table_num_TextBox.Text = 63
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -877,8 +877,8 @@
         Reserve.Table_num_TextBox.Text = 64
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -889,8 +889,8 @@
         Reserve.Table_num_TextBox.Text = 65
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -901,8 +901,8 @@
         Reserve.Table_num_TextBox.Text = 66
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -913,8 +913,8 @@
         Reserve.Table_num_TextBox.Text = 67
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -925,8 +925,8 @@
         Reserve.Table_num_TextBox.Text = 68
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -937,8 +937,8 @@
         Reserve.Table_num_TextBox.Text = 69
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -949,8 +949,8 @@
         Reserve.Table_num_TextBox.Text = 70
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -961,8 +961,8 @@
         Reserve.Table_num_TextBox.Text = 71
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -973,8 +973,8 @@
         Reserve.Table_num_TextBox.Text = 72
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -985,8 +985,8 @@
         Reserve.Table_num_TextBox.Text = 73
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -997,11 +997,11 @@
         Reserve.Table_num_TextBox.Text = 74
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
-       
+
     End Sub
 
     Private Sub Button75_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button75.Click
@@ -1009,8 +1009,8 @@
         Reserve.Table_num_TextBox.Text = 75
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1021,8 +1021,8 @@
         Reserve.Table_num_TextBox.Text = 76
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1033,8 +1033,8 @@
         Reserve.Table_num_TextBox.Text = 77
         If Button1.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1055,14 +1055,14 @@
 
     End Sub
 
-   
+
     Private Sub Button81_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button81.Click
         Reserve.Show()
         Reserve.Table_num_TextBox.Text = 83
         If Button81.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1073,8 +1073,8 @@
         Reserve.Table_num_TextBox.Text = 91
         If Button78.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1085,8 +1085,8 @@
         Reserve.Table_num_TextBox.Text = 80
         If Button79.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1097,8 +1097,8 @@
         Reserve.Table_num_TextBox.Text = 82
         If Button84.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1109,8 +1109,8 @@
         Reserve.Table_num_TextBox.Text = 84
         If Button80.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1121,8 +1121,8 @@
         Reserve.Table_num_TextBox.Text = 85
         If Button85.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1133,8 +1133,8 @@
         Reserve.Table_num_TextBox.Text = 86
         If Button86.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1145,8 +1145,8 @@
         Reserve.Table_num_TextBox.Text = 87
         If Button87.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1157,8 +1157,8 @@
         Reserve.Table_num_TextBox.Text = 88
         If Button88.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
@@ -1169,14 +1169,11 @@
         Reserve.Table_num_TextBox.Text = 89
         If Button89.BackColor = Color.Red Then
 
-            Reserve.Reseved_label.BackColor = Color.Red
-            Reserve.Reseved_label.Text = "Reserved"
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
 
         End If
         Reserve.Check_table()
     End Sub
-
-    Private Sub MainForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
+   
 End Class

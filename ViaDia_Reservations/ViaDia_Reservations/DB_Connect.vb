@@ -108,8 +108,8 @@ Public Class DB_Connect
                     Reserve.Week_Label.Enabled = True
                     Reserve.Week_Label.Text = objDataset.Tables("Table").Rows(0).Item(9)
                     Reserve.Comment_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(10)
-                    Reserve.Reseved_label.BackColor = Color.Red
-                    Reserve.Reseved_label.Text = "Resevered"
+                    Reserve.Reserved_label.BackColor = Color.Red
+                    Reserve.Reserved_label.Text = "Resevered"
 
                 End If
             Catch ex As MySqlException

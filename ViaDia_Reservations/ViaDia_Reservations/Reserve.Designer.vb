@@ -32,7 +32,7 @@ Partial Class Reserve
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Save_Button = New System.Windows.Forms.Button()
-        Me.Reseved_label = New System.Windows.Forms.Label()
+        Me.Reserved_label = New System.Windows.Forms.Label()
         Me.Close_Button = New System.Windows.Forms.Button()
         Me.Edit_Button = New System.Windows.Forms.Button()
         Me.Delete_Button = New System.Windows.Forms.Button()
@@ -128,15 +128,15 @@ Partial Class Reserve
         Me.Save_Button.Text = "Save"
         Me.Save_Button.UseVisualStyleBackColor = True
         '
-        'Reseved_label
+        'Reserved_label
         '
-        Me.Reseved_label.AutoSize = True
-        Me.Reseved_label.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Reseved_label.Location = New System.Drawing.Point(506, 31)
-        Me.Reseved_label.Name = "Reseved_label"
-        Me.Reseved_label.Size = New System.Drawing.Size(33, 13)
-        Me.Reseved_label.TabIndex = 12
-        Me.Reseved_label.Text = "Open"
+        Me.Reserved_label.AutoSize = True
+        Me.Reserved_label.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Reserved_label.Location = New System.Drawing.Point(506, 31)
+        Me.Reserved_label.Name = "Reserved_label"
+        Me.Reserved_label.Size = New System.Drawing.Size(33, 13)
+        Me.Reserved_label.TabIndex = 12
+        Me.Reserved_label.Text = "Open"
         '
         'Close_Button
         '
@@ -149,6 +149,7 @@ Partial Class Reserve
         '
         'Edit_Button
         '
+        Me.Edit_Button.Enabled = False
         Me.Edit_Button.Location = New System.Drawing.Point(144, 278)
         Me.Edit_Button.Name = "Edit_Button"
         Me.Edit_Button.Size = New System.Drawing.Size(75, 23)
@@ -289,7 +290,7 @@ Partial Class Reserve
         Me.Controls.Add(Me.Delete_Button)
         Me.Controls.Add(Me.Edit_Button)
         Me.Controls.Add(Me.Close_Button)
-        Me.Controls.Add(Me.Reseved_label)
+        Me.Controls.Add(Me.Reserved_label)
         Me.Controls.Add(Me.Save_Button)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -315,7 +316,7 @@ Partial Class Reserve
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Save_Button As System.Windows.Forms.Button
-    Friend WithEvents Reseved_label As System.Windows.Forms.Label
+    Friend WithEvents Reserved_label As System.Windows.Forms.Label
     Friend WithEvents Close_Button As System.Windows.Forms.Button
     Friend WithEvents Edit_Button As System.Windows.Forms.Button
     Friend WithEvents Delete_Button As System.Windows.Forms.Button
