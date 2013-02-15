@@ -116,6 +116,16 @@ Partial Class MainForm
         Me.Button87 = New System.Windows.Forms.Button()
         Me.Button88 = New System.Windows.Forms.Button()
         Me.Button89 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.tab_NuM = New System.Windows.Forms.Label()
+        Me.Weeks = New System.Windows.Forms.Label()
+        Me.comment = New System.Windows.Forms.Label()
+        Me.Phone = New System.Windows.Forms.Label()
+        Me.end_date = New System.Windows.Forms.Label()
+        Me.start_date = New System.Windows.Forms.Label()
+        Me.Table_nume = New System.Windows.Forms.Label()
+        Me.Customer_name = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -1145,11 +1155,109 @@ Partial Class MainForm
         Me.Button89.Text = "89"
         Me.Button89.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightGreen
+        Me.Panel1.Controls.Add(Me.tab_NuM)
+        Me.Panel1.Controls.Add(Me.Weeks)
+        Me.Panel1.Controls.Add(Me.comment)
+        Me.Panel1.Controls.Add(Me.Phone)
+        Me.Panel1.Controls.Add(Me.end_date)
+        Me.Panel1.Controls.Add(Me.start_date)
+        Me.Panel1.Controls.Add(Me.Table_nume)
+        Me.Panel1.Controls.Add(Me.Customer_name)
+        Me.Panel1.Location = New System.Drawing.Point(276, 398)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(212, 115)
+        Me.Panel1.TabIndex = 184
+        Me.Panel1.Visible = False
+        '
+        'tab_NuM
+        '
+        Me.tab_NuM.AutoSize = True
+        Me.tab_NuM.Location = New System.Drawing.Point(3, 3)
+        Me.tab_NuM.Name = "tab_NuM"
+        Me.tab_NuM.Size = New System.Drawing.Size(50, 13)
+        Me.tab_NuM.TabIndex = 8
+        Me.tab_NuM.Text = "Pöydän#"
+        Me.tab_NuM.Visible = False
+        '
+        'Weeks
+        '
+        Me.Weeks.AutoSize = True
+        Me.Weeks.Location = New System.Drawing.Point(154, 32)
+        Me.Weeks.Name = "Weeks"
+        Me.Weeks.Size = New System.Drawing.Size(33, 13)
+        Me.Weeks.TabIndex = 7
+        Me.Weeks.Text = "Viikot"
+        Me.Weeks.Visible = False
+        '
+        'comment
+        '
+        Me.comment.AutoSize = True
+        Me.comment.Location = New System.Drawing.Point(3, 92)
+        Me.comment.Name = "comment"
+        Me.comment.Size = New System.Drawing.Size(56, 13)
+        Me.comment.TabIndex = 6
+        Me.comment.Text = "Kommentti"
+        Me.comment.Visible = False
+        '
+        'Phone
+        '
+        Me.Phone.AutoSize = True
+        Me.Phone.Location = New System.Drawing.Point(3, 74)
+        Me.Phone.Name = "Phone"
+        Me.Phone.Size = New System.Drawing.Size(29, 13)
+        Me.Phone.TabIndex = 5
+        Me.Phone.Text = "Puh:"
+        Me.Phone.Visible = False
+        '
+        'end_date
+        '
+        Me.end_date.AutoSize = True
+        Me.end_date.Location = New System.Drawing.Point(91, 32)
+        Me.end_date.Name = "end_date"
+        Me.end_date.Size = New System.Drawing.Size(41, 13)
+        Me.end_date.TabIndex = 4
+        Me.end_date.Text = "päättyy"
+        Me.end_date.Visible = False
+        '
+        'start_date
+        '
+        Me.start_date.AutoSize = True
+        Me.start_date.Location = New System.Drawing.Point(3, 32)
+        Me.start_date.Name = "start_date"
+        Me.start_date.Size = New System.Drawing.Size(33, 13)
+        Me.start_date.TabIndex = 3
+        Me.start_date.Text = "alkaa"
+        Me.start_date.Visible = False
+        '
+        'Table_nume
+        '
+        Me.Table_nume.AutoSize = True
+        Me.Table_nume.Location = New System.Drawing.Point(59, 3)
+        Me.Table_nume.Name = "Table_nume"
+        Me.Table_nume.Size = New System.Drawing.Size(57, 13)
+        Me.Table_nume.TabIndex = 1
+        Me.Table_nume.Text = "Pöydän##"
+        Me.Table_nume.Visible = False
+        '
+        'Customer_name
+        '
+        Me.Customer_name.AutoSize = True
+        Me.Customer_name.Location = New System.Drawing.Point(3, 55)
+        Me.Customer_name.Name = "Customer_name"
+        Me.Customer_name.Size = New System.Drawing.Size(27, 13)
+        Me.Customer_name.TabIndex = 0
+        Me.Customer_name.Text = "Nimi"
+        Me.Customer_name.Visible = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(654, 555)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button89)
         Me.Controls.Add(Me.Button88)
         Me.Controls.Add(Me.Button87)
@@ -1248,7 +1356,10 @@ Partial Class MainForm
         Me.MaximumSize = New System.Drawing.Size(670, 593)
         Me.MinimumSize = New System.Drawing.Size(670, 593)
         Me.Name = "MainForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1347,5 +1458,14 @@ Partial Class MainForm
     Friend WithEvents Button87 As System.Windows.Forms.Button
     Friend WithEvents Button88 As System.Windows.Forms.Button
     Friend WithEvents Button89 As System.Windows.Forms.Button
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Customer_name As System.Windows.Forms.Label
+    Friend WithEvents Table_nume As System.Windows.Forms.Label
+    Friend WithEvents comment As System.Windows.Forms.Label
+    Friend WithEvents Phone As System.Windows.Forms.Label
+    Friend WithEvents end_date As System.Windows.Forms.Label
+    Friend WithEvents start_date As System.Windows.Forms.Label
+    Friend WithEvents Weeks As System.Windows.Forms.Label
+    Friend WithEvents tab_NuM As System.Windows.Forms.Label
 
 End Class

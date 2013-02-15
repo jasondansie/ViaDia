@@ -85,7 +85,8 @@ Public Class DB_Connect
         Dim objDataset As New DataSet()
         Dim objDataAdapter As New MySqlDataAdapter()
         Dim Table_name As String
-
+        Dim Dialog2 As String = "Database=viadia;Data Source=localhost;" _
+          & "User Id=root;Password="
         Table_name = Convert_Month(Imonth)
 
         Try
@@ -96,6 +97,7 @@ Public Class DB_Connect
             Try
                 objDataAdapter.SelectCommand = New MySqlCommand(query, conn)
                 objDataAdapter.Fill(objDataset)
+
 
                 If objDataset.Tables("Table").Rows.Count = 1 Then
 
@@ -110,6 +112,18 @@ Public Class DB_Connect
                     Reserve.Comment_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(10)
                     Reserve.Reserved_label.BackColor = Color.Red
                     Reserve.Reserved_label.Text = "Resevered"
+
+                    'Dialog2.Name_TextBox1.Text = objDataset.Tables("Table").Rows(0).Item(2)
+                    'Reserve.Email_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(3)
+                    'Reserve.DateTimePicker1.Text = objDataset.Tables("Table").Rows(0).Item(5).ToString
+                    ' Reserve.DateTimePicker2.Text = objDataset.Tables("Table").Rows(0).Item(6).ToString
+                    ' Reserve.Phone_Num_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(4)
+                    ' Reserve.Editor_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(7)
+                    ' Reserve.Week_Label.Enabled = True
+                    ' Reserve.Week_Label.Text = objDataset.Tables("Table").Rows(0).Item(9)
+                    ' Reserve.Comment_TextBox.Text = objDataset.Tables("Table").Rows(0).Item(10)
+                    'Reserve.Reserved_label.BackColor = Color.Red
+                    ' Reserve.Reserved_label.Text = "Resevered"
 
                 End If
             Catch ex As MySqlException

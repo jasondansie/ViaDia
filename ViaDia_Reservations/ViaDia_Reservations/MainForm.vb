@@ -118,6 +118,8 @@
 
         End If
         Reserve.Check_table()
+
+    
     End Sub
 
     Private Sub Button3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button3.Click
@@ -130,6 +132,8 @@
 
         End If
         Reserve.Check_table()
+
+
     End Sub
 
     Private Sub Button4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -1176,4 +1180,146 @@
         Reserve.Check_table()
     End Sub
    
+    Private Sub Button1_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseHover
+        tab_NuM.Visible = True
+        Panel1.Visible = True
+        Weeks.ForeColor = Color.Red
+        Customer_name.Visible = True
+        Table_nume.Visible = True
+        ' Contrat_date.Visible = True
+        start_date.Visible = True
+        end_date.Visible = True
+        Phone.Visible = True
+        Weeks.Visible = True
+        comment.Visible = True
+
+
+        Reserve.Table_num_TextBox.Text = 1
+        If Button1.BackColor = Color.Red Then
+
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+
+        Customer_name.Text = Reserve.Name_TextBox.Text
+        Table_nume.Text = Reserve.Table_num_TextBox.Text
+        ' Contrat_date = 
+        start_date.Text = Reserve.DateTimePicker1.Value
+        end_date.Text = Reserve.DateTimePicker2.Value
+        Phone.Text = Reserve.Phone_Num_TextBox.Text
+        Weeks.Text = Reserve.Week_Label.Text
+        comment.Text = Reserve.Comment_TextBox.Text
+    End Sub
+
+    Private Sub Button1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseLeave
+        tab_NuM.Visible = False
+        Panel1.Visible = False
+        Customer_name.Visible = False
+        Table_nume.Visible = False
+        'Contrat_date.Visible = False
+        start_date.Visible = False
+        end_date.Visible = False
+        Phone.Visible = False
+        Weeks.Visible = False
+        comment.Visible = False
+
+
+    End Sub
+
+   
+    Private Sub Button2_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseHover
+        tab_NuM.Visible = True
+        Panel1.Visible = True
+        Weeks.ForeColor = Color.Red
+        Customer_name.Visible = True
+        Table_nume.Visible = True
+        ' Contrat_date.Visible = True
+        start_date.Visible = True
+        end_date.Visible = True
+        Phone.Visible = True
+        Weeks.Visible = True
+
+
+        Reserve.Table_num_TextBox.Text = 2
+        If Button1.BackColor = Color.Red Then
+
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+
+        Customer_name.Text = Reserve.Name_TextBox.Text
+        Table_nume.Text = Reserve.Table_num_TextBox.Text
+        ' Contrat_date = 
+        start_date.Text = Reserve.DateTimePicker1.Value
+        end_date.Text = Reserve.DateTimePicker2.Value
+        Phone.Text = Reserve.Phone_Num_TextBox.Text
+        Weeks.Text = Reserve.Week_Label.Text
+    End Sub
+
+    Private Sub Button2_MouseLeave1(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseLeave
+        tab_NuM.Visible = False
+        Panel1.Visible = False
+        Customer_name.Visible = False
+        Table_nume.Visible = False
+        'Contrat_date.Visible = False
+        start_date.Visible = False
+        end_date.Visible = False
+        Phone.Visible = False
+        Weeks.Visible = False
+
+
+
+
+
+
+    End Sub
+
+   
+  
+    Private Sub Button3_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button3.MouseHover
+        tab_NuM.Visible = True
+        Panel1.Visible = True
+        Weeks.ForeColor = Color.Red
+        Customer_name.Visible = True
+        Table_nume.Visible = True
+        ' Contrat_date.Visible = True
+        start_date.Visible = True
+        end_date.Visible = True
+        Phone.Visible = True
+        Weeks.Visible = True
+
+
+        Reserve.Table_num_TextBox.Text = 3
+        If Button1.BackColor = Color.Red Then
+
+            Reserve.Reserved_label.BackColor = Color.Red
+            Reserve.Reserved_label.Text = "Reserved"
+
+        End If
+        Reserve.Check_table()
+
+        Customer_name.Text = Reserve.Name_TextBox.Text
+        Table_nume.Text = Reserve.Table_num_TextBox.Text
+        ' Contrat_date = 
+        start_date.Text = Reserve.DateTimePicker1.Value
+        end_date.Text = Reserve.DateTimePicker2.Value
+        Phone.Text = Reserve.Phone_Num_TextBox.Text
+        Weeks.Text = Reserve.Week_Label.Text
+    End Sub
+
+    Private Sub Button3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button3.MouseLeave
+        tab_NuM.Visible = False
+        Panel1.Visible = False
+        Customer_name.Visible = False
+        Table_nume.Visible = False
+        'Contrat_date.Visible = False
+        start_date.Visible = False
+        end_date.Visible = False
+        Phone.Visible = False
+        Weeks.Visible = False
+    End Sub
 End Class

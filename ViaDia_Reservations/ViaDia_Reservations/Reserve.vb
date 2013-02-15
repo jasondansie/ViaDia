@@ -1,7 +1,12 @@
-﻿Public Class Reserve
+﻿
+Public Class Reserve
 
-    Private Sub Save_Button_Click(sender As System.Object, e As System.EventArgs) Handles Save_Button.Click
-       
+    Public Shared Sub Reserve(ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String, ByRef week_num As String, ByRef comments As String)
+        table_num = (1)
+
+    End Sub
+    Private Sub Save_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Save_Button.Click
+
         Dim button As String = "Button"
         Dim Imonth As String
         Dim Cmonth As Integer
@@ -29,11 +34,11 @@
 
     End Sub
 
-    Private Sub Close_Button_Click(sender As System.Object, e As System.EventArgs) Handles Close_Button.Click
+    Private Sub Close_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Close_Button.Click
         Me.Close()
     End Sub
 
-    Private Sub Delete_Button_Click(sender As System.Object, e As System.EventArgs) Handles Delete_Button.Click
+    Private Sub Delete_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Delete_Button.Click
 
         Dim intResponse As Integer
         Dim Imonth As String
@@ -48,7 +53,7 @@
 
         If intResponse = vbYes Then
 
-            imonth = MainForm.MonthCalendar1.SelectionStart.ToShortDateString()
+            Imonth = MainForm.MonthCalendar1.SelectionStart.ToShortDateString()
             DB_Connect.Delete_row(Table_num_TextBox.Text, Cmonth)
             Me.Close()
             MainForm.clearbuttons()
@@ -56,7 +61,7 @@
 
         End If
 
-       
+
 
     End Sub
 
@@ -96,7 +101,7 @@
             DB_Connect.Update_Table_Color(Cmonth)
 
         End If
-       
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Week_ComboBox.SelectedIndexChanged
@@ -151,6 +156,15 @@
             Edit_Button.Text = "save"
             Edit_Button.Enabled = True
         End If
+
+    End Sub
+
+
+
+
+    Private Sub Table_num_TextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Table_num_TextBox.TextChanged
+
+
 
     End Sub
 End Class
