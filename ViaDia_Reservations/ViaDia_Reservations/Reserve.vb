@@ -2,7 +2,7 @@
 Public Class Reserve
 
     Public Shared Sub Reserve(ByRef table_num As String, ByRef Rname As String, ByRef email As String, ByRef phone_num As String, ByRef bdate As String, ByRef edate As String, ByRef editor As String, ByRef week_num As String, ByRef comments As String)
-        table_num = (1)
+
 
     End Sub
     Private Sub Save_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Save_Button.Click

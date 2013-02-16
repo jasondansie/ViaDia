@@ -125,7 +125,9 @@ Partial Class MainForm
         Me.start_date = New System.Windows.Forms.Label()
         Me.Table_nume = New System.Windows.Forms.Label()
         Me.Customer_name = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -1252,11 +1254,22 @@ Partial Class MainForm
         Me.Customer_name.Text = "Nimi"
         Me.Customer_name.Visible = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ViaDia_Reservations.My.Resources.Resources.viadia_tori
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(167, 58)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 185
+        Me.PictureBox1.TabStop = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(654, 555)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button89)
         Me.Controls.Add(Me.Button88)
@@ -1352,6 +1365,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(670, 593)
         Me.MinimumSize = New System.Drawing.Size(670, 593)
@@ -1360,6 +1374,7 @@ Partial Class MainForm
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1467,5 +1482,6 @@ Partial Class MainForm
     Friend WithEvents start_date As System.Windows.Forms.Label
     Friend WithEvents Weeks As System.Windows.Forms.Label
     Friend WithEvents tab_NuM As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
